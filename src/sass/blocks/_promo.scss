@@ -1,34 +1,62 @@
 .promo {
     background: url(../img/promo_bg.png) center center/cover no-repeat;
     min-height: 498px;
-    &__btns {
-        display: flex;
-        padding-top: 64px;
-    }
-    &__btn-wrapper {
-        padding: 9.6px;
-        width: 48px;
-        height: 48px;
-        background: #FFFFFF;
-        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.04);
-        border-radius: 8px;
+    max-width: 100%;
+    &__wrapper {
+        position: relative;
     }
     &__title {
+        display: flex;
         font-weight: 400;
         font-size: 48px;
+        position: relative;
+        max-width: 898px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 34px 20px 0 0;
+        line-height: 58px;
         h2 {
             text-align: center;
             font-weight: 400;
             font-size: 48px;
         }
     }
-    &__graph-img {
+    &__wrapper::before {
+        content: url('../img/icons.png');
+        position: absolute;
+        left: 0;
+        top: 49px;
         display: block;
-        width: 261px;
-        height: 168px;
+        margin-left: 16px;
     }
-    &__wrapper {
+    &__wrapper::after {
+        content: url('../img/chart.png');
+        position: absolute;
+        right: 0px;
+        top: 57%;
+        display: block;
+    }
+    &__btn-wrapper {
+        margin-right: 10px;
+    }
+    &__btn{
         display: flex;
+        display: -webkit-flex;
         justify-content: center;
-    } 
+        align-items: center;
+        width: 244px;
+        height: 48px;
+        background-color: #157DDE;
+        margin: 0 auto;
+    }
+    &__link {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 }
