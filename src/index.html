@@ -7,28 +7,29 @@
     <title>IBusiness</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="navbar">
-                    <div class="navbar__logo">
-                        <img src="img/IB_logo.png" alt="IBusiness">
-                    </div>
-                    <ul class="navbar__items">
-                        <li class="navbar__item"><a href="#" class="navbar__link">О приложении</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Особенности</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Способы оплаты</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Сертификаты</a></li>
-                        <!-- <li class="navbar__item"><a href="#" class="navbar__link navbar__link_last">Войти</a></li> -->
-                        <button class="navbar__link_last">Войти</button>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <div class="promo">
+            <div class="container">
+                <nav>
+                    <div class="navbar">
+                        <div class="navbar__logo">
+                            <img src="img/IB_logo.png" alt="IBusiness">
+                        </div>
+                        <ul class="navbar__items">
+                            <li class="navbar__item"><a href="#" class="navbar__link">О приложении</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Особенности</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Способы оплаты</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Сертификаты</a></li>
+                            <!-- <li class="navbar__item"><a href="#" class="navbar__link navbar__link_last">Войти</a></li> -->
+                            <button class="navbar__link_last">Войти</button>
+                        </ul>
+                    </div>
+                </nav>      
+            </div>
             <div class="promo__wrapper">
                 <div class="promo__title">
                     <h2>Бесплатный инструмент для автоматизации продаж и приема платежей</h2>
@@ -37,7 +38,48 @@
                     <a href="#" class="promo__link">Скачать приложение</a>
                 </div>
             </div>
+            <div class="promo__images">
+                <div class="container">
+                    <div class="promo__images-block">
+                        <div class="promo__leftside">
+                            <div class="promo__img img-1">
+                                <img src="img/promo_img/leftside.png" alt="list">
+                            </div>
+                        </div>
+                        <div class="promo__img-man">
+                            <img src="img/promo_img/man_shoe.png" alt="man">
+                        </div>
+                        <div class="promo__rightside">
+                            <div class="promo__img img-3">
+                                <img src="img/promo_img/rightside.png" alt="chart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+
+    <!-- Slider -->
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.png" alt="slide1">
+                </div>
+                <div>
+                    <img src="img/slide_2.png" alt="slide2">
+                </div>
+                <div>
+                    <img src="img/slide_3.png" alt="slide3">
+                </div>
+            </div>
+            <!-- <button type="button" class="prev"><img src="../icons/left.svg" alt="#"></button> -->
+            <button type="button" class="next"><img src="../icons/right.svg" alt="#"></button>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+    <script src="js/tiny-slider.js"></script>
 </body>
 </html>

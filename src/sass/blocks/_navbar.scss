@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     height: 92px;
-    background-color: #fff;
+    background-color: #CBE6FF;
     padding: 26px 120px;
     &__items {
         display: flex;
@@ -24,13 +24,17 @@
         color: #000A22;
         &_last {
             display: block;
-            color:#fff;
-            background-color: #000;
-            padding: 12px 24px;
+            color:#0075E3;
+            background-color: #ffffff;
+            padding: 16px 32px;
             line-height: 11px;
             height: 40px;
             cursor: pointer;
-            margin: 0 10px 0 19px;
+            margin: 0 0 0 19px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
         }
     }
 }
