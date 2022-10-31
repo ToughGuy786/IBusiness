@@ -1,10 +1,8 @@
 const slider = tns({
     container: '.carousel__inner',
-    items: 1,
+    items: 3,
     slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: false
+    autoplay: true
 });
 
 document.querySelector('.prev').addEventListener('click', function ()  {
