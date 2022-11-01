@@ -1,18 +1,7 @@
 .carousel {
     background-color: #F9F9F9;
-    &__container {
-        position: relative;
-        padding-top: 44px;
-        // margin: 0 151px 0 237px;
-        margin: 0 auto;
-        max-width: 1054px;
-    }
-    &__wrapper {
-        .slide-box {
-            display: flex;
-            align-items: center;
-        }
-    }
+    padding-top: 44px;
+    max-width: 1054px;
     &__btn {
         width: 150px;
         padding: 16px 32px;
