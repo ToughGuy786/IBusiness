@@ -4,10 +4,14 @@
     justify-content: space-between;
     height: 92px;
     background-color: #CBE6FF;
-    padding: 26px 120px;
+    padding: 26px 0;
     &__items {
         display: flex;
         align-items: center;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
     }
     &__item {
         display: block;
