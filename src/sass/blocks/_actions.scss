@@ -1,0 +1,307 @@
+.actions {
+    padding: 164px 0 120px 0;
+    background-color: #FBFBFB;
+    &__items-block-1 {
+        display: grid;
+        grid-template-columns: 411px 305px 378px;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "a c d"
+        "b c d";
+    }
+    &__item-1 {
+        grid-area: a;
+        align-self: end;
+        margin-right: 32px;
+    }
+    &__item-2 {
+        grid-area: b;
+    }
+    &__item-3 {
+        grid-area: c;
+    }
+    &__item-4 {
+        grid-area: d;
+        align-self: center;
+        margin-left: 70px;
+        margin-bottom: 32px;
+    }
+    &__descr {
+        margin-bottom: 32px;
+    }
+    &__descr-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #000A22;
+    }
+    &__descr-text {
+        padding-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000A22;
+    }
+
+    &__li {
+        min-width: 378px;
+        background-color: #ffffff;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        position: relative;
+    }
+    &__li-descr {
+        padding: 22px;
+        margin-left: 60px;
+    }
+    &__li-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__li-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #5C5C5C;
+    }
+    
+}
+
+// before images styling. modify using
+//First block
+.before-picture::before {
+    content: url("../icons/actions_icons/act_ico-1/ic_picture.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #C8E0FB;
+    border-radius: 8px;
+}
+.before-car::before {
+    content: url("../icons/actions_icons/act_ico-1/ic_car.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #C8E0FB;
+    border-radius: 8px;
+}
+.before-send::before {
+    content: url("../icons/actions_icons/act_ico-1/ic_send.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #C8E0FB;
+    border-radius: 8px;
+}
+
+// second block
+.before-upload::before {
+    content: url("../icons/actions_icons/act_ico-2/ic_upload.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D5DBFF;
+    border-radius: 8px;
+}
+.before-sort::before {
+    content: url("../icons/actions_icons/act_ico-2/ic_sort.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D5DBFF;
+    border-radius: 8px;
+}
+.before-scanner::before {
+    content: url("../icons/actions_icons/act_ico-2/ic_scanner.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D5DBFF;
+    border-radius: 8px;
+}
+
+// third block
+.before-setting::before {
+    content: url("../icons/actions_icons/act_ico-3/ic_setting.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FDF5DD;
+    border-radius: 8px;
+}
+.before-favourite::before {
+    content: url("../icons/actions_icons/act_ico-3/ic_favourite.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FDF5DD;
+    border-radius: 8px;
+}
+.before-tool::before {
+    content: url("../icons/actions_icons/act_ico-3/ic_tool.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FDF5DD;
+    border-radius: 8px;
+}
+
+// fourth block
+.before-graphbar::before {
+    content: url("../icons/actions_icons/act_ico-4/ic_graphbar.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D6EFEA;
+    border-radius: 8px;
+}
+.before-piechart::before {
+    content: url("../icons/actions_icons/act_ico-4/ic_piechart.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D6EFEA;
+    border-radius: 8px;
+}
+.before-discount::before {
+    content: url("../icons/actions_icons/act_ico-4/ic_discount.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #D6EFEA;
+    border-radius: 8px;
+}
+
+// fifth block
+.before-user::before {
+    content: url("../icons/actions_icons/act_ico-5/ic_user.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FBC8E0;
+    border-radius: 8px;
+}
+.before-start::before {
+    content: url("../icons/actions_icons/act_ico-5/ic_start.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FBC8E0;
+    border-radius: 8px;
+}
+.before-shoppingbag::before {
+    content: url("../icons/actions_icons/act_ico-5/ic_shoppingbag.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    background-color: #FBC8E0;
+    border-radius: 8px;
+}
+
+// sixth block
+.before-shoppingcard::before {
+    content: url("../icons/actions_icons/act_ico-6/ic_shoppingcard.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #EAD5FA;
+}
+.before-scannercode::before {
+    content: url("../icons/actions_icons/act_ico-6/ic_scannercode.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #EAD5FA;
+}
+.before-wallet::before {
+    content: url("../icons/actions_icons/act_ico-6/ic_wallet.svg");
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #EAD5FA;
+}
+// 

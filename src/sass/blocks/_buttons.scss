@@ -1,0 +1,18 @@
+.actions__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 48px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    .actions__btn-link {
+        text-decoration: none;
+        padding: 16px 30px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
