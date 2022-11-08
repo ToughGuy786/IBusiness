@@ -1,0 +1,24 @@
+.applications {
+    background-color: #CBE6FF;
+    padding: 72px 0 88px 0;
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        max-width: 789px;
+        margin-top: 24px;
+    }
+    &__apps {
+        max-width: 378px;
+        display: flex;
+        justify-content: space-between;
+        margin: 32px auto 0 auto;
+    }
+}

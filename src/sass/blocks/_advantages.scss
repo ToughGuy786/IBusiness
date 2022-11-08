@@ -1,0 +1,10 @@
+.advantages {
+    padding: 152px 0 120px 0;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 584px;
+    }
+}
