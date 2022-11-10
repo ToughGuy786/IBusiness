@@ -1,0 +1,50 @@
+.app-descr {
+    background: url('../img/appdescr_bg.png') center center/cover no-repeat;
+    padding: 113px 0 227px 0;
+    height: 514px;
+    &__descr {
+        max-width: 584px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: #0075E3;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0075E3;
+        padding-top: 8px;
+    }
+    &__box-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        width: 225px;
+        height: 48px;
+        background: #0075E3;
+        border-radius: 50px;
+        margin: 32px auto 0 auto;
+    }
+    &__link {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        align-items: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 16px 32px;
+        white-space: nowrap;
+    }
+}

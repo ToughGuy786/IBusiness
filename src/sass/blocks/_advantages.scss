@@ -7,4 +7,48 @@
     &__item {
         max-width: 584px;
     }
+    &__title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 17px;
+    }
+    &__descr {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    &__first-block, &__second-block {
+        max-width: 276px;
+    }
+    &__box {
+        min-height: 132px;
+        margin-top: 32px;
+    }
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        padding-top: 16px;
+    }
+    &__subtext {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #8C8C8C;
+    }
 }

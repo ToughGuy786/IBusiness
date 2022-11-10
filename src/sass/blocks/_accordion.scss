@@ -1,0 +1,106 @@
+.accordion {
+    padding: 156px 0 121px 0;
+    &__items {
+        max-width: 1046px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &__item {
+        max-width: 482px;
+        padding-top: 32px;
+    }
+    &__content {
+        display: flex;
+    }
+    &__title {
+        display: block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        color: #565555;
+        cursor: pointer;
+        max-width: 482px;
+        position: relative;
+    }
+    &__title::after {
+        content: url('../icons/arrow_right.svg');
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    &__input {
+        width: 0;
+        height: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+
+    }
+    &__input:checked ~ &__border {
+        border-bottom: 2px solid #000000;
+        color: #000000;
+    }
+    &__input:checked ~ &__title {
+        color:#000000;
+        font-weight: 600;
+    }
+    &__input:checked ~ &__title::after {
+        content: url('../icons/arrow_down.svg');
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    &__input:checked ~ &__content {
+        display: flex;
+        transition: .5s all;
+    }
+    &__border {
+        border-bottom: 1px solid #565555;
+        padding-bottom: 32px;
+    }
+    &__content {
+        display: none;
+        transition: 1s all;
+    }
+    &__text {
+        max-width: 482px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        padding-top: 16px;
+    }
+    &__bg-1::after {
+        content: url('../img/online_shopping.png');
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(8%);
+        transition: .5s all;
+    }
+    &__bg-2::after {
+        content:url('../img/offline_shopping.png');
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(8%);
+    }
+    &__bg-3::after {
+        content:url('../img/insta_shopping.png');
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(49px);
+    }
+}
