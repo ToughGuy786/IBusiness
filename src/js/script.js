@@ -4,6 +4,6 @@ $(document).ready(function(){
         slidesToShow: 1,
         speed: 1200,
         prevArrow: false,
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/ic_arrowright.svg"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/ic_arrowright.svg"></button>',
     });
   });

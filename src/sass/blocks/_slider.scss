@@ -1,8 +1,6 @@
 .carousel {
-    background-color: #F9F9F9;
     padding-top: 44px;
     &__inner {
-        max-width: 910px;
         margin: 0 auto;
     }
     &__slide-wrapper {
@@ -13,7 +11,6 @@
     &__content {
         max-width: 411px;
         padding-right: 50px;
-        margin-right: 102px;
     }
     &__slide-title {
         font-family: 'Gilroy', sans-serif;
@@ -47,6 +44,9 @@
     &__slide-content {
         text-align: center;
     }
+    &__sec-bg {
+        background-color:#FFFFFF;
+    }
     
     .prev {
         display: none;
@@ -69,6 +69,9 @@
     justify-content: center;
     font-size:0;
     padding:0;
+    position: absolute;
+    bottom: 50px;
+    right: 36%;
     li {
         margin: 0 4px;
         border-radius: 0px;
