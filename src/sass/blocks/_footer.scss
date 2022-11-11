@@ -1,0 +1,113 @@
+.footer {
+    background-color: #060606;
+    padding: 48px 0 40px 0;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo-text {
+        padding-top: 16px;
+    }
+    &__nav {
+        line-height: 24px; 
+    }
+    &__nav-title {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__nav-items {
+        padding-top: 24px;
+        line-height: 40px;        
+    }
+    &__nav-item {
+        a {
+            text-decoration: none;
+            color:#ffffff;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    // Contacts
+    &__contacts-title {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__contacts-wrapper {
+        padding-top: 29px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        line-height: 40px; 
+    }
+    &__phonebox, &__mailbox, &__instabox, &__adressbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__phonebox::before {
+        content: url('../icons/ic_phone.svg');
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+    }
+    &__mailbox::before {
+        content: url('../icons/ic_mail.svg');
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+    }
+    &__instabox::before {
+        content: url('../icons/ic_instagram-fill.svg');
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+    }
+    &__adressbox::before {
+        content: url('../icons/ic_location.svg');
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__phone, &__mail, &__insta, &__adress {
+        padding-left: 32px;
+    }
+    &__phone {
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+    //Footer apps
+    &__appstore {
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+    }
+    &__googleplay {
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        margin-top: 16px;
+    }
+
+    //Divider 
+    .divider {
+        border-bottom: 1px solid #8C8C8C;
+        padding-top: 40px;
+    }
+    &__mini-text {
+        margin-top: 24px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #8C8C8C;
+    }
+}
