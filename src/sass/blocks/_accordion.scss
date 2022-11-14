@@ -78,27 +78,24 @@
         color: #000000;
         padding-top: 16px;
     }
-    &__bg-1::after {
-        content: url('../img/online_shopping.png');
-        display: block;
+    &__bg-1 {
         position: absolute;
+        display: block;
         top: 0;
         right: 0;
         transform: translateX(8%);
         transition: .5s all;
     }
-    &__bg-2::after {
-        content:url('../img/offline_shopping.png');
-        display: block;
+    &__bg-2 {
         position: absolute;
+        display: block;
         top: 0;
         right: 0;
         transform: translateX(8%);
     }
-    &__bg-3::after {
-        content:url('../img/insta_shopping.png');
-        display: block;
+    &__bg-3 {
         position: absolute;
+        display: block;
         top: 0;
         right: 0;
         transform: translateX(49px);

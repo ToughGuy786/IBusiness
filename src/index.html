@@ -13,45 +13,56 @@
 <body>
     <header>
         <div class="promo">
-            <div class="container">
-                <nav>
+            <nav>
+                <div class="container">
                     <div class="navbar">
                         <div class="navbar__logo">
                             <a href="#"><img src="img/IB_logo.png" alt="IBusiness"></a>
                         </div>
                         <ul class="navbar__items">
+                            <div class="navbar__hamburger-logo-close-btn">
+                                <img src="img/IB_logo.png" alt="IBusiness">
+                                <button type="button" class="navbar__close-btn"></button>
+                            </div>
                             <li class="navbar__item"><a href="#" class="navbar__link">О приложении</a></li>
                             <li class="navbar__item"><a href="#" class="navbar__link">Особенности</a></li>
                             <li class="navbar__item"><a href="#" class="navbar__link">Способы оплаты</a></li>
                             <li class="navbar__item"><a href="#" class="navbar__link">Сертификаты</a></li>
                             <!-- <li class="navbar__item"><a href="#" class="navbar__link navbar__link_last">Войти</a></li> -->
-                            <button class="navbar__link_last">Войти</button>
                         </ul>
+                        <button class="navbar__link_last">Войти</button>
                     </div>
-                </nav>      
-            </div>
-            <div class="promo__wrapper">
-                <div class="promo__title">
-                    <h2>Все сервисы для оцифровки бизнеса в одном приложении. <span>Бесплатно. </span></h2>
+                </div> 
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>    
+            </nav>
+            <div>
+                <div class="promo__wrapper">
+                    <div class="promo__title">
+                        <h2>Все сервисы для оцифровки бизнеса в одном приложении. <span>Бесплатно. </span></h2>
+                    </div>
+                    <div class="promo__btn">
+                        <a href="#" class="promo__link">Скачать приложение</a>
+                    </div>
                 </div>
-                <div class="promo__btn">
-                    <a href="#" class="promo__link">Скачать приложение</a>
-                </div>
-            </div>
-            <div class="promo__images">
-                <div class="container">
-                    <div class="promo__images-block">
-                        <div class="promo__leftside">
-                            <div class="promo__img img-1">
-                                <img src="img/promo_img/leftside.png" alt="list">
+                <div class="promo__images">
+                    <div class="container">
+                        <div class="promo__images-block">
+                            <div class="promo__leftside">
+                                <div class="promo__img img-1">
+                                    <img src="img/promo_img/leftside.png" alt="list">
+                                </div>
                             </div>
-                        </div>
-                        <div class="promo__img-man">
-                            <img src="img/promo_img/man_shoe.png" alt="man">
-                        </div>
-                        <div class="promo__rightside">
-                            <div class="promo__img img-3">
-                                <img src="img/promo_img/rightside.png" alt="chart">
+                            <div class="promo__img-man">
+                                <img src="img/promo_img/man_shoe.png" alt="man">
+                            </div>
+                            <div class="promo__rightside">
+                                <div class="promo__img img-3">
+                                    <img src="img/promo_img/rightside.png" alt="chart">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -388,7 +399,7 @@
                 <div class="pmethods__item">
                     <div class="pmethods__item-bg">
                         <span>
-                            <img src="img/pos_phone.png" alt="Pos terminal">
+                            <img class="pmethods__img-size-1" src="img/pos_phone.png" alt="Pos terminal">
                         </span>
                     </div>
                     <div class="pmethods__descr">
@@ -399,7 +410,7 @@
                 <div class="pmethods__item">
                     <div class="pmethods__item-bg">
                         <span>
-                            <img src="img/scanner_phone.png" alt="QR Payment">
+                            <img class="pmethods__img-size-2" src="img/scanner_phone.png" alt="QR Payment">
                         </span>
                     </div>
                     <div class="pmethods__descr">
@@ -410,7 +421,7 @@
                 <div class="pmethods__item">
                     <div class="pmethods__item-bg">
                         <span>
-                            <img src="img/payment_phone.png" alt="payment">
+                            <img class="pmethods__img-size-3" src="img/payment_phone.png" alt="payment">
                         </span>
                     </div>
                     <div class="pmethods__descr">
@@ -493,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item advantages__img">
                     <img src="img/advantages_phone.png" alt="advantages">
                 </div>
             </div>
@@ -506,11 +517,15 @@
                 <div class="accordion__item">
                     <input class="accordion__input" type="radio" name="accordion" id="accordion_1">
                     <label class="accordion__title" for="accordion_1">Для онлайн-торговли</label>
-                    <div class="accordion__content accordion__bg-1">
+                    <div class="accordion__content">
                         <div class="accordion__text">
                             iBusiness - это многофункциональное приложение, которое заменяет
                             онлайн кассу, pos-терминал, систему
                             товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                            
+                        </div>
+                        <div class="accordion__bg-1">
+                            <img src="img/online_shopping.png" alt="Online shopping">
                         </div>
                     </div>
                     <div class="accordion__border"></div>
@@ -518,9 +533,12 @@
                 <div class="accordion__item">
                     <input class="accordion__input" type="radio" name="accordion" id="accordion_2">
                     <label class="accordion__title" for="accordion_2">Для оффлайн-торговли</label>                   
-                    <div class="accordion__content accordion__bg-2">
+                    <div class="accordion__content">
                         <div class="accordion__text">
                             iBusiness - это многофункциональное приложение, которое заменяет онлайн кассу, pos-терминал, систему товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                        </div>
+                        <div class="accordion__bg-2">
+                            <img src="img/offline_shopping.png" alt="#">
                         </div>
                     </div>
                     <div class="accordion__border"></div>
@@ -528,9 +546,12 @@
                 <div class="accordion__item">
                     <input class="accordion__input" type="radio" name="accordion" id="accordion_3">
                     <label class="accordion__title" for="accordion_3">Для инста-шопперов</label>
-                    <div class="accordion__content accordion__bg-3">
+                    <div class="accordion__content">
                         <div class="accordion__text">
                             iBusiness - это многофункциональное приложение, которое заменяет онлайн кассу, pos-терминал, систему товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                        </div>
+                        <div class="accordion__bg-3">
+                            <img src="img/insta_shopping.png" alt="Insta Shopping">
                         </div>
                     </div>
                     <div class="accordion__border"></div>
@@ -610,8 +631,9 @@
         </div>
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 </html>

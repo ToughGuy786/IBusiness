@@ -27,7 +27,10 @@
         justify-content: space-between;
         margin-top: 16px;
     }
-    &__first-block, &__second-block {
+    &__first-block {
+        max-width: 276px;
+    }
+    &__second-block {
         max-width: 276px;
     }
     &__box {

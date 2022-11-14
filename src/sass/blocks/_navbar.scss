@@ -1,3 +1,7 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 .navbar {
     max-width: 100%;
     display: flex;
@@ -12,6 +16,9 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
+    }
+    &__hamburger-logo-close-btn {
+        display: none;
     }
     &__item {
         display: block;
@@ -37,8 +44,10 @@
             margin: 0 0 0 19px;
             border-radius: 50px;
             border: none;
-            font-size: 16px;
+            font-family: 'Gilroy';
+            font-style: normal;
             font-weight: 500;
+            font-size: 16px;
         }
     }
 }
