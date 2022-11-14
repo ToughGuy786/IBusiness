@@ -1,5 +1,5 @@
 .app-descr {
-    background: url('../img/appdescr_bg.png') center center/cover no-repeat;
+    background: url('../img/app_descr_bg.png') center center/cover no-repeat;
     padding: 113px 0 227px 0;
     height: 514px;
     &__descr {
@@ -13,7 +13,7 @@
         font-weight: 600;
         font-size: 32px;
         line-height: 38px;
-        color: #0075E3;
+        color: #000000;
     }
     &__text {
         font-family: 'Montserrat';
@@ -21,7 +21,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #0075E3;
+        color: #000000;
         padding-top: 8px;
     }
     &__box-link {

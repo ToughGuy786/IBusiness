@@ -24,7 +24,6 @@ body {
     box-sizing:border-box;
     margin: 0 auto;
     padding: 0;
-    max-width: 1440px;
 }
 
 ul {
@@ -34,7 +33,7 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -125,7 +124,7 @@ ul {
     .actions {
         &__items-block-1 {
             display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(10, 1fr);
             grid-auto-rows: minmax(0, auto);
             grid-template-areas: 
             ". . a a a a ."
@@ -284,7 +283,142 @@ ul {
     }
     .hamburger {
         display: block;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        padding: 7px 4px;
+        span {
+            display: block;
+            width: 16px;
+            height: 1.5px;
+            background-color: #0075E3;
+            border-radius: 3px;
+            margin-bottom: 3.5px;
+        }
+        span:nth-child(3) {
+            margin-bottom: 0;
+        }
     }
     
-    
+
+    // Actions
+    .actions {
+        &__items-block-1 {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-auto-rows: minmax(0, auto);
+            grid-template-areas: 
+            ". . a a a a ."
+            ". c c d d d ."
+            ". . . b . . .";
+        }
+        &__descr {
+            text-align: center;
+            width: 458px;
+        }
+        &__img {
+            img {
+                max-width: 221px;
+            }
+        }
+        &__item-1 {
+            max-width: 458px;
+        }
+        &__item-2 {
+            margin-top: 24px;
+        }
+    }
+    .advantages {
+        padding: 93px 0 64px 0;
+        &__items {
+            display: block;
+        }
+        &__item {
+            max-width: 696px;
+        }
+        &__content {
+            max-width: 470px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__descr {
+            display: block;
+        }
+        &__first-block {
+            display: flex;
+            max-width: 696px;
+        }
+        &__second-block {
+            display: flex;
+            max-width: 696px;
+        }
+        &__box {
+            width: 340px;
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+    }
+    .app-descr {
+        padding: 104px 0;
+        height: 400px;
+    }
+    .footer {
+        &__items {
+            display: block;
+        }
+        &__links-contacts {
+            margin-top: 40px;
+            max-width: 632px;
+        }
+        &__apps {
+            display: flex;
+            align-items: baseline;
+            margin-top: 40px;
+        }
+        &__appstore {
+            margin-right: 16px;
+        }
+        &__googleplay {
+            margin: 0;
+        }
+        &__phone::before {
+            transform: translateY(7px);
+            left: 0;
+            content: url('../icons/ic_phone.svg');
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+        &__mail::before {
+            transform: translateY(7px);
+            left: 0;
+            content: url('../icons/ic_mail.svg');
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+        &__insta::before {
+            transform: translateY(7px);
+            left: 0;
+            content: url('../icons/ic_instagram-fill.svg');
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+        &__adress::before {
+            transform: translateY(7px);
+            content: url('../icons/ic_location.svg');
+            left: 0;
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+        }
+    }
 }

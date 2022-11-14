@@ -13,6 +13,7 @@
     }
     &__nav {
         line-height: 24px; 
+        margin-right: 32px;
     }
     &__nav-title {
         font-weight: 500;
@@ -30,46 +31,62 @@
             font-weight: 400;
         }
     }
+    &__contacts {
+        line-height: 24px;
+    }
+    &__links-contacts {
+        display: flex;
+        justify-content: space-between;
+    }
     // Contacts
     &__contacts-title {
         font-weight: 500;
         font-size: 16px;
     }
     &__contacts-wrapper {
-        padding-top: 29px;
+        padding-top: 24px;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
         line-height: 40px; 
+        max-width: 276px;
     }
     &__phonebox, &__mailbox, &__instabox, &__adressbox {
         position: relative;
         display: flex;
         align-items: center;
     }
-    &__phonebox::before {
+    &__phone::before {
+        transform: translateY(7px);
+        left: 0;
         content: url('../icons/ic_phone.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__mailbox::before {
+    &__mail::before {
+        transform: translateY(7px);
+        left: 0;
         content: url('../icons/ic_mail.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__instabox::before {
+    &__insta::before {
+        transform: translateY(7px);
+        left: 0;
         content: url('../icons/ic_instagram-fill.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__adressbox::before {
+    &__adress::before {
+        transform: translateY(7px);
         content: url('../icons/ic_location.svg');
+        left: 0;
         display: block;
         position: absolute;
         width: 24px;
