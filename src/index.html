@@ -5,20 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBusiness</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+    <!-- Mobile Menu Begin -->
+    <div class="mob-menu">
+        <div class="mob-menu__wrapper">
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                    <a href="#" class="mob-menu__link mob-menu__link--active">О приложении</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="#" class="mob-menu__link">Особенности</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="#" class="mob-menu__link">Способы оплаты</a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="#" class="mob-menu__link">Сертификаты</a>
+                </li>
+            </ul>
+            <div class="mob-menu__contacts">
+                <div class="mob-menu__contactsItem">
+                    <div class="mob-menu__contactsIcon">
+                        <svg class="mob-menu__contactsSvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none"  d="M20.9995 19.1864V16.4767C21.0105 16.0337 20.858 15.6021 20.5709 15.264C19.7615 14.3106 16.9855 13.7008 15.8851 13.935C15.0274 14.1176 14.4272 14.9788 13.8405 15.5644C11.5747 14.2785 9.69864 12.4062 8.41026 10.1448C8.99696 9.55929 9.85994 8.96036 10.0429 8.10428C10.2772 7.00777 9.66819 4.24949 8.72138 3.43684C8.38835 3.151 7.96253 2.99577 7.52331 3.00009H4.80817C3.77364 3.00106 2.91294 3.92895 3.00713 4.96919C3.00006 13.935 10.0001 21 19.0265 20.9929C20.0723 21.0873 21.0037 20.2223 20.9995 19.1864Z" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="mob-menu__contactsDesc">
+                        <div class="mob-menu__contactsTitle">Телефон</div>
+                        <div class="mob-menu__contactsText">+7 771 191 68 17</div>
+                    </div>
+                </div>
+                <div class="mob-menu__contactsItem">
+                    <div class="mob-menu__contactsIcon">
+                        <svg class="mob-menu__contactsSvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 10H16.01" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 10H12.01" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 10H8.01" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 16V21L12 16" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 16H4V4H20V16H12" stroke="#0075E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="mob-menu__contactsDesc">
+                        <div class="mob-menu__contactsTitle">Email</div>
+                        <div class="mob-menu__contactsText">info@ibusiness.asia</div>
+                    </div>
+                </div>
+                <div class="mob-menu__contactsItem">
+                    <div class="mob-menu__contactsIcon">
+                        <svg class="mob-menu__contactsSvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.87727 2.06C8.94364 2.01091 9.28364 2 12 2C14.7164 2 15.0564 2.01182 16.1218 2.06C17.1873 2.10818 17.9145 2.27818 18.5509 2.52455C19.2173 2.77636 19.8218 3.17 20.3218 3.67909C20.8309 4.17818 21.2236 4.78182 21.4745 5.44909C21.7218 6.08545 21.8909 6.81273 21.94 7.87636C21.9891 8.94455 22 9.28455 22 12C22 14.7164 21.9882 15.0564 21.94 16.1227C21.8918 17.1864 21.7218 17.9136 21.4745 18.55C21.2236 19.2174 20.8303 19.822 20.3218 20.3218C19.8218 20.8309 19.2173 21.2236 18.5509 21.4745C17.9145 21.7218 17.1873 21.8909 16.1236 21.94C15.0564 21.9891 14.7164 22 12 22C9.28364 22 8.94364 21.9882 7.87727 21.94C6.81364 21.8918 6.08636 21.7218 5.45 21.4745C4.78266 21.2236 4.17802 20.8302 3.67818 20.3218C3.16944 19.8224 2.77574 19.2181 2.52455 18.5509C2.27818 17.9145 2.10909 17.1873 2.06 16.1236C2.01091 15.0555 2 14.7155 2 12C2 9.28364 2.01182 8.94364 2.06 7.87818C2.10818 6.81273 2.27818 6.08545 2.52455 5.44909C2.77611 4.78189 3.17011 4.17756 3.67909 3.67818C4.17822 3.16955 4.78225 2.77586 5.44909 2.52455C6.08545 2.27818 6.81273 2.10909 7.87636 2.06H7.87727ZM16.0409 3.86C14.9864 3.81182 14.67 3.80182 12 3.80182C9.33 3.80182 9.01364 3.81182 7.95909 3.86C6.98364 3.90455 6.45455 4.06727 6.10182 4.20455C5.63545 4.38636 5.30182 4.60182 4.95182 4.95182C4.62004 5.27459 4.36471 5.66753 4.20455 6.10182C4.06727 6.45455 3.90455 6.98364 3.86 7.95909C3.81182 9.01364 3.80182 9.33 3.80182 12C3.80182 14.67 3.81182 14.9864 3.86 16.0409C3.90455 17.0164 4.06727 17.5455 4.20455 17.8982C4.36455 18.3318 4.62 18.7255 4.95182 19.0482C5.27455 19.38 5.66818 19.6355 6.10182 19.7955C6.45455 19.9327 6.98364 20.0955 7.95909 20.14C9.01364 20.1882 9.32909 20.1982 12 20.1982C14.6709 20.1982 14.9864 20.1882 16.0409 20.14C17.0164 20.0955 17.5455 19.9327 17.8982 19.7955C18.3645 19.6136 18.6982 19.3982 19.0482 19.0482C19.38 18.7255 19.6355 18.3318 19.7955 17.8982C19.9327 17.5455 20.0955 17.0164 20.14 16.0409C20.1882 14.9864 20.1982 14.67 20.1982 12C20.1982 9.33 20.1882 9.01364 20.14 7.95909C20.0955 6.98364 19.9327 6.45455 19.7955 6.10182C19.6136 5.63545 19.3982 5.30182 19.0482 4.95182C18.7254 4.62006 18.3325 4.36474 17.8982 4.20455C17.5455 4.06727 17.0164 3.90455 16.0409 3.86V3.86ZM10.7227 15.0827C11.4361 15.3797 12.2303 15.4197 12.9699 15.1961C13.7095 14.9725 14.3485 14.499 14.7778 13.8566C15.2071 13.2142 15.4001 12.4426 15.3237 11.6737C15.2473 10.9049 14.9064 10.1863 14.3591 9.64091C14.0102 9.29225 13.5884 9.02528 13.1239 8.85922C12.6595 8.69317 12.164 8.63215 11.6732 8.68056C11.1823 8.72897 10.7083 8.88562 10.2853 9.13921C9.86223 9.3928 9.50068 9.73704 9.22664 10.1471C8.9526 10.5572 8.7729 11.023 8.70047 11.5109C8.62804 11.9988 8.66468 12.4966 8.80776 12.9687C8.95084 13.4407 9.1968 13.8751 9.52793 14.2407C9.85905 14.6062 10.2671 14.8938 10.7227 15.0827ZM8.36545 8.36545C8.84275 7.88816 9.40938 7.50955 10.033 7.25124C10.6566 6.99293 11.325 6.85998 12 6.85998C12.675 6.85998 13.3434 6.99293 13.967 7.25124C14.5906 7.50955 15.1573 7.88816 15.6345 8.36545C16.1118 8.84275 16.4905 9.40938 16.7488 10.033C17.0071 10.6566 17.14 11.325 17.14 12C17.14 12.675 17.0071 13.3434 16.7488 13.967C16.4905 14.5906 16.1118 15.1573 15.6345 15.6345C14.6706 16.5985 13.3632 17.14 12 17.14C10.6368 17.14 9.3294 16.5985 8.36545 15.6345C7.40151 14.6706 6.85998 13.3632 6.85998 12C6.85998 10.6368 7.40151 9.3294 8.36545 8.36545V8.36545ZM18.28 7.62545C18.3983 7.51388 18.493 7.37971 18.5585 7.23089C18.624 7.08206 18.6589 6.92161 18.6613 6.75903C18.6637 6.59645 18.6334 6.43504 18.5723 6.28437C18.5111 6.1337 18.4204 5.99683 18.3054 5.88185C18.1904 5.76688 18.0536 5.67614 17.9029 5.61502C17.7522 5.55389 17.5908 5.52361 17.4282 5.52598C17.2657 5.52835 17.1052 5.56332 16.9564 5.62881C16.8076 5.69431 16.6734 5.789 16.5618 5.90727C16.3448 6.1373 16.226 6.44284 16.2306 6.75903C16.2352 7.07522 16.3629 7.37716 16.5865 7.60077C16.8101 7.82437 17.1121 7.95203 17.4282 7.95664C17.7444 7.96125 18.05 7.84245 18.28 7.62545V7.62545Z" fill="#0075E3"/>
+                        </svg>
+                    </div>
+                    <div class="mob-menu__contactsDesc">
+                        <div class="mob-menu__contactsTitle">Instagram</div>
+                        <a href="#" class="mob-menu__contactsText">@ibusiness.asia</a>
+                    </div>
+                </div>
+                <div class="mob-menu__contactsItem">
+                    <div class="mob-menu__contactsIcon">
+                        <svg class="mob-menu__contactsSvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8529 6.55978C10.0342 6.55978 8.55978 8.03418 8.55978 9.85295C8.55978 11.6717 10.0342 13.1461 11.8529 13.1461C13.6717 13.1461 15.1461 11.6717 15.1461 9.85295C15.1461 8.03418 13.6717 6.55978 11.8529 6.55978ZM10.0797 9.85295C10.0797 8.87361 10.8736 8.0797 11.8529 8.0797C12.8323 8.0797 13.6262 8.87361 13.6262 9.85295C13.6262 10.8323 12.8323 11.6262 11.8529 11.6262C10.8736 11.6262 10.0797 10.8323 10.0797 9.85295Z" fill="#0075E3"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8529 2C7.51588 2 4 5.51588 4 9.85295C4 11.2884 4.49921 12.7426 5.19358 14.0817C5.89137 15.4275 6.81293 16.7078 7.71982 17.809C8.62856 18.9125 9.53519 19.8513 10.2138 20.5138C10.5536 20.8455 10.8374 21.109 11.0373 21.2905C11.1372 21.3813 11.2163 21.4516 11.2709 21.4998C11.2983 21.5239 11.3195 21.5424 11.3342 21.5552C11.3416 21.5616 11.3473 21.5665 11.3514 21.57L11.3561 21.5742L11.3576 21.5754C11.3578 21.5755 11.3584 21.5761 11.8529 20.9991L11.3584 21.5761L11.8529 22L12.3475 21.5761L11.8529 20.9991C12.3475 21.5761 12.3474 21.5762 12.3475 21.5761L12.3483 21.5754L12.3498 21.5742L12.3545 21.57C12.3586 21.5665 12.3643 21.5616 12.3717 21.5552C12.3864 21.5424 12.4076 21.5239 12.435 21.4998C12.4896 21.4516 12.5687 21.3813 12.6686 21.2905C12.8685 21.109 13.1523 20.8455 13.4921 20.5138C14.1707 19.8513 15.0773 18.9125 15.9861 17.809C16.893 16.7078 17.8145 15.4275 18.5123 14.0817C19.2067 12.7426 19.7059 11.2884 19.7059 9.85295C19.7059 5.51588 16.19 2 11.8529 2ZM12.4304 19.4261C12.2098 19.6415 12.0145 19.8262 11.8529 19.9761C11.6914 19.8262 11.4961 19.6415 11.2755 19.4261C10.6242 18.7903 9.7576 17.8926 8.89309 16.8428C8.02674 15.7908 7.17505 14.6012 6.5429 13.3821C5.90734 12.1564 5.51993 10.9507 5.51993 9.85295C5.51993 6.35532 8.35532 3.51993 11.8529 3.51993C15.3506 3.51993 18.186 6.35532 18.186 9.85295C18.186 10.9507 17.7986 12.1564 17.163 13.3821C16.5308 14.6012 15.6792 15.7908 14.8128 16.8428C13.9483 17.8926 13.0817 18.7903 12.4304 19.4261Z" fill="#0075E3"/>
+                        </svg>
+                    </div>
+                    <div class="mob-menu__contactsTitle">
+                        <div class="mob-menu__contactsTitle">Адрес</div>
+                        <div class="mob-menu__contactsText">г. Алматы, мкрн. Керемет 1 к6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/. Mobile Menu End -->
+
+    <!-- Header Begin -->
     <header>
-        <div class="promo">
-            <nav>
-                <div class="container">
-                    <div class="navbar">
-                        <div class="navbar__logo">
-                            <a href="#"><img src="img/IB_logo.png" alt="IBusiness"></a>
-                        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__inner">
+                    <button type="button" class="burger js-menu-toggle" aria-expanded="false">
+                        <span class="burger__item"></span>
+                    </button>
+                    <div class="navbar__logo">
+                        <a href="#"><img src="img/IB_logo.png" alt="IBusiness"></a>
+                    </div>
+                    <div class="navbar__right">
                         <ul class="navbar__items">
                             <div class="navbar__hamburger-logo-close-btn">
                                 <img src="img/IB_logo.png" alt="IBusiness">
@@ -30,49 +110,70 @@
                             <li class="navbar__item"><a href="#" class="navbar__link">Сертификаты</a></li>
                             <!-- <li class="navbar__item"><a href="#" class="navbar__link navbar__link_last">Войти</a></li> -->
                         </ul>
-                        <button class="navbar__link_last">Войти</button>
-                    </div>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div> 
-                </div> 
-                  
-            </nav>
-            <div>
-                <div class="promo__wrapper">
-                    <div class="promo__title">
-                        <h2>Все сервисы для оцифровки бизнеса в одном приложении. <span>Бесплатно. </span></h2>
-                    </div>
-                    <div class="promo__btn">
-                        <a href="#" class="promo__link">Скачать приложение</a>
+                        <a href="https://app.mypage.kz/login" target="_blank">
+                            <button class="navbar__link_last">
+                                <img src="icons/log_in.svg" alt="log in">
+                                <div>Войти</div>
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class="promo__images">
-                    <div class="container">
-                        <div class="promo__images-block">
-                            <div class="promo__leftside">
-                                <div class="promo__img img-1">
-                                    <img src="img/promo_img/leftside.png" alt="list">
-                                </div>
+            </div>
+        </nav>
+    </header><!--/. Header End -->
+
+    <!-- Entry Begin -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo__header">
+                <div class="promo__title">
+                    <h2>Автоматизируйте ваш магазин в одном приложении за 1 день. <span>Бесплатно. </span></h2>
+                </div>
+                <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="promo__btn promo_link">
+                    Скачать приложение
+                </a>
+            </div>
+            <div class="promo__image">
+                <img src="img/promo-img.png" alt="list">
+            </div>
+            <!-- <div class="promo__images">
+                <div class="container">
+                   <div class="promo__images-block">
+                        <div class="promo__leftside">
+                            <div class="promo__img img-1">
+                                <img src="img/promo_img/leftside.png" alt="list">
                             </div>
-                            <div class="promo__img-man">
-                                <img src="img/promo_img/man_shoe.png" alt="man">
-                            </div>
-                            <div class="promo__rightside">
-                                <div class="promo__img img-3">
-                                    <img src="img/promo_img/rightside.png" alt="chart">
-                                </div>
+                        </div>
+                        <div class="promo__img-man">
+                            <img src="img/promo_img/man_shoe.png" alt="man">
+                        </div>
+                        <div class="promo__rightside">
+                            <div class="promo__img img-3">
+                                <img src="img/promo_img/rightside.png" alt="chart">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
-    </header>
+        <div class="promo__waves">
+            <svg width="1440" height="586" viewBox="0 0 1440 586" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_702_11628)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-282.109 301.206C-291.471 323.602 -291.358 362.961 -244.188 392.113C-232.232 399.503 -212.869 403.912 -188.212 409.53C-116.23 425.924 0.87188 452.597 110.567 593.663C218.122 736.371 213.313 856.375 210.355 930.142C209.343 955.408 208.547 975.252 212.562 988.724C228.395 1041.87 266.361 1052.25 290.423 1049.05C340.637 1041.94 361.165 975.957 364.953 947.805C385.376 796.058 320.372 636.949 226.248 511.122L226.29 511.09C225.321 509.824 224.35 508.564 223.373 507.302C222.411 506.031 221.446 504.763 220.479 503.499L220.437 503.531C123.531 379.833 -13.1039 275.56 -164.923 255.678C-193.086 251.99 -262.137 254.589 -282.109 301.206Z" fill="#0075E3" fill-opacity="0.12"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-162.475 40.1343C-170.962 66.169 -166.833 113.607 -109.622 153.531C-95.12 163.651 -72.405 170.934 -43.4781 180.209C41.138 207.338 178.902 251.509 319.69 433.561C458.697 616.98 465.387 761.495 469.495 850.259C470.9 880.604 472.005 904.434 477.988 921.073C501.601 986.721 546.318 1003.09 573.664 1001.69C630.69 998.219 647.586 920.803 649.08 887.266C657.174 705.664 565.371 506.342 443.504 344.758L443.532 344.737C442.569 343.48 441.604 342.224 440.635 340.969C439.678 339.707 438.717 338.448 437.754 337.191L437.727 337.212C313.541 177.401 145.082 36.7652 -32.3388 -2.80894C-65.1035 -10.1183 -144.246 -14.0089 -162.475 40.1343Z" fill="#0075E3" fill-opacity="0.12"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M994.092 756.279C984.827 735.357 984.157 698.261 1028.04 669.857C1039.16 662.657 1057.32 658.119 1080.45 652.338C1147.96 635.468 1257.8 608.021 1358.4 472.911C1456.95 336.296 1450.05 223.294 1445.81 153.831C1444.36 130.039 1443.21 111.353 1446.73 98.5777C1460.61 48.1817 1496.18 37.6509 1518.92 40.1862C1566.39 45.901 1587.04 107.679 1591.16 134.135C1613.4 276.746 1555.28 427.979 1469.05 548.42L1469.09 548.45C1468.2 549.661 1467.31 550.869 1466.42 552.077C1465.53 553.294 1464.65 554.508 1463.76 555.718L1463.72 555.689C1374.83 674.178 1248.12 775.144 1105.43 796.876C1078.96 800.907 1013.83 799.819 994.092 756.279Z" fill="#0075E3" fill-opacity="0.12"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1111.99 999.965C1103.48 975.597 1106.43 930.807 1159.56 892.053C1173.03 882.23 1194.29 874.918 1221.37 865.606C1300.58 838.37 1429.55 794.025 1558.64 619.674C1686.03 444.072 1689.49 307.742 1691.61 224.006C1692.33 195.38 1692.91 172.9 1698.22 157.1C1719.18 94.7653 1761 78.4596 1786.8 79.2408C1840.61 81.3837 1858.06 154.011 1860.13 185.588C1871.34 356.578 1788.75 546.237 1677.08 700.925L1677.11 700.944C1676.23 702.148 1675.34 703.351 1674.45 704.552C1673.58 705.76 1672.69 706.965 1671.81 708.169L1671.79 708.15C1557.9 861.212 1401.91 997.075 1235.48 1037.87C1204.75 1045.41 1130.24 1050.63 1111.99 999.965Z" fill="#0075E3" fill-opacity="0.12"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_702_11628">
+                        <rect width="1440" height="586" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </section><!--/. Entry End -->
 
-    <!-- Slider -->
+    <!-- Slider Begin -->
     <section class="carousel">
         <div class="container">
             <div class="carousel__inner">
@@ -84,10 +185,10 @@
                         <div class="carousel__slide-title">Оплата только за банковскую комиссию</div>
                         <div class="carousel__slide-text">Установи наше приложение 
                             и плати только за платеж</div>
-                        <div class="carousel__btn"><a href="#">Подробнее</a></div>
+                        <a class="carousel__btn" href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank">Подробнее</a>
                     </div>
                 </div>
-                <div class="carousel__slide-wrapper">
+                <!-- <div class="carousel__slide-wrapper">
                     <div class="carousel__image carousel__sec-bg">
                         <img src="img/second_slide.png" alt="slide-2">
                     </div>
@@ -95,15 +196,17 @@
                         <div class="carousel__slide-title">Оплата только за банковскую комиссию</div>
                         <div class="carousel__slide-text">Установи наше приложение 
                             и плати только за платеж</div>
-                        <div class="carousel__btn"><a href="#">Подробнее</a></div>
+                        <a class="carousel__btn" href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank">Подробнее</a>
                     </div>
-                </div>
+                </div> -->
               </div>
         </div>
-    </section>
+    </section><!--/. Slider End -->
 
+    <!-- Steps Begin -->
     <section class="steps">
         <div class="container">
+            <div class="steps__subheading">Как подключиться?</div>
             <div class="steps__items">
                 <div class="steps__item steps__item-1">
                     <div class="steps__title">Пройдите 
@@ -122,11 +225,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><!--/. Steps End -->
 
     <!-- Actions -->
     <section class="actions">
         <div class="container">
+            <div class="actions__subheading">Функции</div>
             <div class="actions__items">
                 <div class="actions__items-block-1 bot_offset">
                     <div class="actions__item actions__item-1">
@@ -136,9 +240,9 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">
+                            Начать работу
+                        </a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -179,9 +283,7 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">Начать работу</a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -222,9 +324,7 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">Начать работу</a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -265,9 +365,9 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">
+                            Начать работу
+                        </a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -299,7 +399,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="actions__items-block-1 bot_offset top_offset">
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
@@ -309,9 +408,7 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">Начать работу</a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -352,9 +449,9 @@
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
-                        <div class="actions__btn">
-                            <a href="#" class="actions__btn-link">Начать работу</a>
-                        </div>
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="actions__btn promo_link">
+                            Начать работу
+                        </a>
                     </div>
                     <div class="actions__item actions__item-3">
                         <div class="actions__img">
@@ -448,8 +545,8 @@
                         в одной системе</div>
                 </div>
                 <div class="applications__apps">
-                    <div class="applications__appstore"><a href="#"><img src="img/appstore_btn.png" alt="in App Store"></a></div>
-                    <div class="applications__googleplay"><a href="#"><img src="img/googleplay_btn.png" alt="in Google Play"></a></div>
+                    <div class="applications__appstore"><a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank"><img src="img/appstore_btn.png" alt="in App Store"></a></div>
+                    <div class="applications__googleplay"><a href="https://play.google.com/store/apps/details?id=ibusiness.asia" target="_blank"><img src="img/googleplay_btn.png" alt="in Google Play"></a></div>
                 </div>
             </div>
 
@@ -459,6 +556,7 @@
     <!--Advantages block-->
     <section class="advantages">
         <div class="container">
+            <div class="advantages__subheading">О приложении</div>
             <div class="advantages__items">
                 <div class="advantages__item">
                     <div class="advantages__content">
@@ -514,9 +612,10 @@
 
     <section class="accordion">
         <div class="container">
+            <div class="accordion__subheading">Для кого?</div>
             <div class="accordion__items">
                 <div class="accordion__item">
-                    <input class="accordion__input" type="radio" name="accordion" id="accordion_1">
+                    <input checked class="accordion__input" type="radio" name="accordion" id="accordion_1">
                     <label class="accordion__title" for="accordion_1">Для онлайн-торговли</label>
                     <div class="accordion__content">
                         <div class="accordion__text">
@@ -567,12 +666,13 @@
                 <div class="app-descr__title">Все в одном приложении</div>
                 <div class="app-descr__text">Приложение заменяет сразу несколько сервисов и платных услуг, поможет сократить убытки и повысить доходы.</div>
                 <div class="app-descr__box-link">
-                    <a href="#" class="app-descr__link">Скачать приложение</a>
+                    <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="app-descr__link">Скачать приложение</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Footer Begin -->
     <footer class="footer">
         <div class="container">
             <div class="footer__items">
@@ -582,46 +682,44 @@
                     </div>
                     <div class="footer__logo-text">Мы оцифруем ваш магазин бесплатно</div>
                 </div>
-                <div class="footer__links-contacts">
-                    <div class="footer__item">
-                        <div class="footer__nav">
-                            <div class="footer__nav-title">Полезные ресурсы</div>
-                            <ul class="footer__nav-items">
-                                <li class="footer__nav-item"><a href="#">Правила платежной организации</a></li>
-                                <li class="footer__nav-item"><a href="#">Оферта</a></li>
-                                <li class="footer__nav-item"><a href="#">Политика конфидициальности</a></li>
-                                <li class="footer__nav-item"><a href="#">Как подключить онлайн кассу?</a></li>
-                            </ul>
-                        </div>
+                <div class="footer__item">
+                    <div class="footer__nav">
+                        <div class="footer__nav-title">Полезные ресурсы</div>
+                        <ul class="footer__nav-items">
+                            <li class="footer__nav-item"><a href="./Правила_платежной_организации_IBusiness.pdf" target="_blank">Правила платежной организации</a></li>
+                            <li class="footer__nav-item"><a href="./Оферта IBusiness.pdf" target="_blank">Оферта</a></li>
+                            <li class="footer__nav-item"><a href="./Политика_конфиденциальности_iBusiness.pdf" target="_blank">Политика конфидициальности</a></li>
+                            <li class="footer__nav-item"><a href="./InstructionOFD.pdf" target="_blank">Как подключить онлайн кассу?</a></li>
+                        </ul>
                     </div>
-                    <div class="footer__item">
-                        <div class="footer__contacts">
-                            <div class="footer__contacts-title">Наши контакты</div>
-                            <div class="footer__contacts-wrapper">
-                                <div class="footer__phonebox">
-                                    <div class="footer__phone"><a href="+77711916817">+7 771 191 68 17</a></div>
-                                </div>
-                                <div class="footer__mailbox">
-                                    <div class="footer__mail">info@ibusiness.asia</div>
-                                </div>
-                                <div class="footer__instabox">
-                                    <div class="footer__insta">@ibusiness.asia</div>
-                                </div>
-                                <div class="footer__adressbox">
-                                    <div class="footer__adress">г. Алматы, мкрн. Керемет 3/1к, офис 175</div>
-                                </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-title">Наши контакты</div>
+                        <div class="footer__contacts-wrapper">
+                            <div class="footer__phonebox">
+                                <div class="footer__phone"><a href="tel:77711916817">+7 771 191 68 17</a></div>
+                            </div>
+                            <div class="footer__mailbox">
+                                <div class="footer__mail">info@ibusiness.asia</div>
+                            </div>
+                            <div class="footer__instabox">
+                                <div class="footer__insta">@ibusiness.asia</div>
+                            </div>
+                            <div class="footer__adressbox">
+                                <div class="footer__adress">г. Алматы, мкрн. Керемет 1 к6</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer__item footer__apps">
+                <div class="footer__item">
                     <div class="footer__appstore">
-                        <a href="#" class="footer__app-link">
+                        <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" class="footer__app-link" target="_blank">
                             <img src="img/appstore_btn.png" alt="App Store">
                         </a>
                     </div>
                     <div class="footer__googleplay">
-                        <a href="#" class="footer__app-link">
+                        <a href="https://play.google.com/store/apps/details?id=ibusiness.asia" class="footer__app-link" target="_blank"class="footer__app-link">
                             <img src="img/googleplay_btn.png" alt="Google Play">
                         </a>
                     </div>
@@ -632,7 +730,9 @@
                 ©  2022 IBusiness. Все права защищены
             </div>
         </div>
-    </footer>
+    </footer><!--/. Footer End -->
+
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>

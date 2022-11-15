@@ -1,33 +1,62 @@
 .steps {
-    padding: 144px 0 88px 0;
+    padding: 60px 0;
+
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
+    &__subheading {
+        font-size: 16px;
+        color: #8C8C8C;
+        margin-bottom: 2rem;
+    }
+
     &__items {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
+
     &__item {
-        max-width: 337px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 29px 0 10px 45px;
+
+        @media (min-width: 768px) {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        @media (min-width: 992px) {
+            padding: 29px 0 10px 42px;
+        }
     }
+
     &__item-1 {
         background: url(../icons/01.png) 0 0 no-repeat;
-        padding: 29px 0 10px 42px;
     }
+
     &__item-2 {
         background: url(../icons/02.png) 0 0 no-repeat;
-        padding: 29px 0 10px 42px;
     }
+
     &__item-3 {
         background: url(../icons/03.png) 0 0 no-repeat;
-        padding: 29px 0 10px 42px;
     }
+
     &__title {
         font-family: 'Gilroy', sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 24px;
+        line-height: 32px;
+
+        @media (min-width: 992px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
     }
+
     &__text {
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

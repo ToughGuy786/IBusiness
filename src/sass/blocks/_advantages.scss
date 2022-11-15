@@ -1,12 +1,32 @@
 .advantages {
-    padding: 152px 0 120px 0;
+    padding: 60px 0;
+
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
+    &__subheading {
+        font-size: 16px;
+        color: #8C8C8C;
+        margin-bottom: 2rem;
+    }
+
     &__items {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
+
     &__item {
         max-width: 584px;
     }
+
     &__title {
         font-family: 'Gilroy';
         font-style: normal;
@@ -28,10 +48,33 @@
         margin-top: 16px;
     }
     &__first-block {
-        max-width: 276px;
+        width: 50%;
+        flex: 0 0 50%;
+        padding-right: 15px;
+
+        @media (min-width: 768px) {
+            width: 100%;
+            flex: 0 0  100%;
+        }
+
+        @media (min-width: 992px) {
+            width: 50%;
+            flex: 0 0 50%;
+        }
     }
     &__second-block {
-        max-width: 276px;
+        width: 50%;
+        flex: 0 0 50%;
+
+        @media (min-width: 768px) {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+
+        @media (min-width: 992px) {
+            width: 50%;
+            flex: 0 0 50%;
+        }
     }
     &__box {
         min-height: 132px;
@@ -45,6 +88,7 @@
         line-height: 20px;
         color: #000000;
         padding-top: 16px;
+        margin-bottom: 5px;
     }
     &__subtext {
         font-family: 'Montserrat';
@@ -53,5 +97,21 @@
         font-size: 14px;
         line-height: 20px;
         color: #8C8C8C;
+    }
+
+    &__img {
+        margin-bottom: 1rem !important;
+
+        @media (max-width: 991px) {
+            order: -1;
+            text-align: center;
+        }
+
+        img {
+
+            @media (max-width: 991px) {
+                height: 250px;
+            }
+        }
     }
 }

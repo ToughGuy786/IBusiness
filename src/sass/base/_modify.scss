@@ -7,10 +7,22 @@
 }
 .top_offset {
     padding-top: 120px;
+
+    @media (max-width: 767px) {
+        padding-top: 50px;
+    }
 }
 .bot_offset {
     margin-bottom: 120px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
 }
 .vertical_offset {
     margin: 120px 0;
+
+    @media (max-width: 767px) {
+        margin: 50px 0;
+    }
 }

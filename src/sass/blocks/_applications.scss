@@ -1,6 +1,11 @@
 .applications {
     background-color: #CBE6FF;
-    padding: 72px 0 88px 0;
+    padding: 60px 0;
+
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
     &__item {
         display: flex;
         justify-content: center;

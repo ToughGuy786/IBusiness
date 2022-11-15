@@ -1,14 +1,26 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-}
+
 .navbar {
     max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 92px;
-    background-color: #CBE6FF;
-    padding: 26px 0;
+    padding: 26px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    a {
+        text-decoration: none;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto
+    }
+
     &__items {
         display: flex;
         align-items: center;
@@ -16,6 +28,10 @@ nav {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
     &__hamburger-logo-close-btn {
         display: none;
@@ -33,6 +49,12 @@ nav {
         align-items: center;
         text-align: right;
         color: #000A22;
+
+        &:hover,
+        &:focus {
+            color: #0075E3;
+        }
+
         &_last {
             display: block;
             color:#0075E3;
@@ -48,6 +70,10 @@ nav {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
+            img {
+                display: none;
+            }
         }
+        
     }
 }

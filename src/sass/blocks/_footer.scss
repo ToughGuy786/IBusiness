@@ -2,91 +2,161 @@
     background-color: #060606;
     padding: 48px 0 40px 0;
     color: #ffffff;
-    font-family: 'Montserrat';
-    font-style: normal;
+
     &__items {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
     }
+
+    &__item {
+        padding: 0 15px;
+
+        &:nth-child(1) {
+            max-width: 30%;
+            flex: 0 0 30%;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &:nth-child(2) {
+            max-width: 25%;
+            flex: 0 0 25%;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &:nth-child(3) {
+            max-width: 25%;
+            flex: 0 0 25%;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &:nth-child(4) {
+            max-width: 20%;
+            flex: 0 0 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+
+            @media (max-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+        }
+    }
+
     &__logo-text {
         padding-top: 16px;
+        line-height: 1.5;
     }
     &__nav {
         line-height: 24px; 
-        margin-right: 32px;
     }
     &__nav-title {
         font-weight: 500;
         font-size: 16px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            font-weight: 600;
+        }
     }
     &__nav-items {
         padding-top: 24px;
-        line-height: 40px;        
+        line-height: 1.4;
+
+        @media (max-width: 768px) {
+            padding-top: 16px;
+        }
     }
     &__nav-item {
+        margin-top: 15px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
         a {
             text-decoration: none;
             color:#ffffff;
             font-size: 14px;
             font-weight: 400;
+
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, .7)
+            }
         }
-    }
-    &__contacts {
-        line-height: 24px;
-    }
-    &__links-contacts {
-        display: flex;
-        justify-content: space-between;
     }
     // Contacts
     &__contacts-title {
         font-weight: 500;
         font-size: 16px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            font-weight: 600;
+        }
     }
     &__contacts-wrapper {
-        padding-top: 24px;
+        padding-top: 29px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 24px;
-        line-height: 40px; 
-        max-width: 276px;
+        line-height: 1.3;
+
+        > * {
+            margin-bottom: 20px;
+        }
     }
     &__phonebox, &__mailbox, &__instabox, &__adressbox {
         position: relative;
         display: flex;
         align-items: center;
     }
-    &__phone::before {
-        transform: translateY(7px);
-        left: 0;
+    &__phonebox::before {
         content: url('../icons/ic_phone.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__mail::before {
-        transform: translateY(7px);
-        left: 0;
+    &__mailbox::before {
         content: url('../icons/ic_mail.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__insta::before {
-        transform: translateY(7px);
-        left: 0;
+    &__instabox::before {
         content: url('../icons/ic_instagram-fill.svg');
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
     }
-    &__adress::before {
-        transform: translateY(7px);
+    &__adressbox::before {
         content: url('../icons/ic_location.svg');
-        left: 0;
         display: block;
         position: absolute;
         width: 24px;
@@ -103,14 +173,24 @@
         }
     }
     //Footer apps
-    &__appstore {
+
+    &__app-link {
+        width: 140px;
+        display: block;
         border: 2px solid #ffffff;
         border-radius: 5px;
-    }
-    &__googleplay {
-        border: 2px solid #ffffff;
-        border-radius: 5px;
-        margin-top: 16px;
+
+        @media (min-width: 768px) {
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            width: 140px;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 
     //Divider 
@@ -126,5 +206,10 @@
         font-size: 14px;
         line-height: 20px;
         color: #8C8C8C;
+        text-align: center;
+
+        @media (min-width: 768px) {
+           text-align: left;
+        }
     }
 }

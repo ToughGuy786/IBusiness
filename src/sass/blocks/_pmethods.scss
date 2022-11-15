@@ -1,7 +1,12 @@
 .pmethods {
     background-color: #060606;
     color: #ffffff;
-    padding: 96px 0 120px 0;
+    padding: 60px 0;
+
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
     &__title {
         margin: 0 auto;
         max-width: 578px;
@@ -16,7 +21,6 @@
         margin: 0 auto;
         max-width: 516px;
         text-align: center;
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -25,14 +29,42 @@
     }
     &__items {
         display: flex;
-        justify-content: space-between;
-        margin-top: 72px;
+        flex-wrap: wrap;
+        margin: 42px -15px 0;
+
+        @media (min-width: 768px) {
+            margin: 72px -15px 0;
+        }
     }
+
     &__item {
-        max-width: 378px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        @media (min-width: 768px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 25px;
+            margin-top: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 991px) {
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
+
     }
     &__item-bg {
-        max-width: 378px;
         height: 378px;
         background: url('../img/pmethod_img_bg.png') center center/cover no-repeat;
         display: flex;

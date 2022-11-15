@@ -1,17 +1,39 @@
+
+
 .carousel {
-    padding-top: 44px;
+    padding: 45px 0;
+    background: #F9F9F9;
+
+    @media (min-width: 768px) {
+        padding: 45px 0 0 0;
+    }
+
     &__inner {
         margin: 0 auto;
     }
+
     &__slide-wrapper {
-        display: flex !important;
-        align-items: center;
-        justify-content: space-around;
+
+        @media (min-width: 768px) {
+            display: flex !important;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
     }
+
     &__content {
         max-width: 411px;
-        padding-right: 50px;
+        padding-bottom: 4rem;
+        text-align: center;
+        padding-top: 2rem;
+
+        @media (min-width: 768px) {
+            text-align: left;
+            padding-top: 0;
+        }
     }
+
     &__slide-title {
         font-family: 'Gilroy', sans-serif;
         font-weight: 600;
@@ -19,6 +41,7 @@
         line-height: 38px;
         color: #000A22;
     }
+
     &__slide-text {
         font-style: normal;
         font-weight: 400;
@@ -27,17 +50,21 @@
         color: #000A22;
         margin-top: 16px;
     }
+
     &__btn {
-        width: 150px;
+        color: #FFFFFF;
+        text-decoration: none;
         padding: 16px 32px;
         background: #0075E3;
         border-radius: 50px;
         text-align: center;
         margin-top: 32px;
-        a {
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 16px 0;
+        display: inline-flex;
+        width: max-content;
+
+        &:hover,
+        &:focus {
+            background: #0062BD;
         }
     }
     
@@ -60,7 +87,20 @@
         background: none;
         border: none;
         cursor: pointer;
-        
+
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+    }
+
+    .slick-slide img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
@@ -69,25 +109,31 @@
     justify-content: center;
     font-size:0;
     padding:0;
-    position: absolute;
-    bottom: 50px;
-    right: 36%;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     li {
         margin: 0 4px;
-        border-radius: 0px;
+        border-radius: 0;
+
+        &.slick-active {
+
+            button {
+                background: #2C86DA;
+            }
+        }
+
         button {
             width: 32px;
             height: 4px;
+            border-radius: 32px;
+            background: #DCDCDC;
+            border: 0;
         }
-        
     }
-    // li:nth-child(1) {
-    //     width:8px;
-    //     height:8px;
-    //     padding-right: 4px;
-    // }
-    // li:nth-child(2) {
-    //     padding: 0 4px;
-    // } 
-
 }

@@ -1,10 +1,50 @@
 .promo {
-    background: url(../img/promo_bg.png) center center/cover no-repeat;
-    min-height: 865px;
+    background: #CBE6FF;
     max-width: 100%;
-    &__wrapper {
-        position: relative;
+    padding-top: 3rem;
+    z-index: 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding-top: 5rem;
     }
+
+    &__header {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        text-align: center;
+        padding-top: 35px;
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 768px) {
+            padding-top: 86px;
+        }
+
+        img {
+            max-width: 980px;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    &__waves {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     &__title {
         display: flex;
         font-weight: 700;
@@ -15,22 +55,38 @@
         margin: 0 auto;
         padding: 24px 0 0 0;
         line-height: 64px;
+
         h2 {
             font-family: 'Gilroy', sans-serif;
             text-align: center;
             font-weight: 700;
-            font-size: 48px;
+            font-size: 32px;
+            line-height: 1.2;
             margin-bottom: 32px;
+
+            @media (min-width: 768px) {
+                font-size: 48px;
+                line-height: 1.5;
+            }
         }
+
         span {
             text-decoration: underline;
             text-decoration-color: #ECB950;
         }
     }
+
     &__btn-wrapper {
         margin-right: 10px;
     }
-    &__btn{
+
+    &__btn {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        line-height: 16px;
         display: flex;
         display: -webkit-flex;
         justify-content: center;
@@ -40,17 +96,13 @@
         background-color: #0075E3;
         border-radius: 50px;
         margin: 0 auto;
+
+        &:hover,
+        &:focus {
+            background: #0062BD;
+        }
     }
-    &__link {
-        font-family: 'Gilroy', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
+
     //Promo__images style
     &__images-block {
         display: flex;

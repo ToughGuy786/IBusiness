@@ -1,5 +1,17 @@
 .accordion {
-    padding: 156px 0 121px 0;
+    padding: 60px 0;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        padding: 88px 0;
+    }
+
+    &__subheading {
+        font-size: 16px;
+        color: #8C8C8C;
+        margin-bottom: 2rem;
+    }
+
     &__items {
         max-width: 1046px;
         margin: 0 auto;
@@ -17,12 +29,17 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 21px;
         line-height: 24px;
         color: #565555;
         cursor: pointer;
         max-width: 482px;
         position: relative;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+
     }
     &__title::after {
         content: url('../icons/arrow_right.svg');
