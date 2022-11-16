@@ -254,11 +254,13 @@ ul {
             margin: 0;
             background-color: #CBE6FF;
             div {
-                display: none;
-                background-color: #0075e3;
+                display: block;
+                background-color: #ffffff;
+                padding: 16px 32px;
+                border-radius: 50px;
             }
             img {
-                display: block;
+                display: none;
             }
         }
     }
@@ -546,4 +548,49 @@ ul {
     }
 }
 
+@media (max-width: 575px) {
+    .navbar {
+        &__link_last {
+            display: none;
+        }
+        &__logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 170px;
+            }
+        }
+        &__right {
+            display: none;
+        }
+    }
+    .actions {
+        &__item-3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+    }
+    .app-descr {
+        padding: 104px 0;
+    }
+    .carousel {
+        padding-bottom: 0;
+        &__slide-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    .footer {
+        &__logo {
+            img {
+                width: 170px;
+            }
+        }
+        &__logo-text {
+            padding-top: 30px;
+        }
+    }
+}
 

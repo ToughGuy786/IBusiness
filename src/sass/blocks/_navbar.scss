@@ -10,9 +10,14 @@
     a {
         text-decoration: none;
     }
-
+    &__logo {
+        img {
+            width: 152px;
+        }
+    }
     &__inner {
         display: flex;
+        justify-content: space-between;
     }
 
     &__right {
@@ -76,4 +81,15 @@
         }
         
     }
+}
+
+.menu__close-box {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    .close-btn {
+        background: none;
+        border: none;
+    }    
 }

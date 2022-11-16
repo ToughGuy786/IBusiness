@@ -33,7 +33,7 @@
                     <a href="#" class="mob-menu__link">Сертификаты</a>
                 </li>
             </ul>
-            <div class="mob-menu__contacts">
+            <!-- <div class="mob-menu__contacts hide-block">
                 <div class="mob-menu__contactsItem">
                     <div class="mob-menu__contactsIcon">
                         <svg class="mob-menu__contactsSvg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,6 +83,11 @@
                         <div class="mob-menu__contactsText">г. Алматы, мкрн. Керемет 1 к6</div>
                     </div>
                 </div>
+            </div> -->
+            <div class="menu__close-box">
+                <button class="close-btn">
+                    <img src="icons/close.svg" alt="close">
+                </button>
             </div>
         </div>
     </div><!--/. Mobile Menu End -->
@@ -96,7 +101,7 @@
                         <span class="burger__item"></span>
                     </button>
                     <div class="navbar__logo">
-                        <a href="#"><img src="img/IB_logo.png" alt="IBusiness"></a>
+                        <a href="#"><img src="img/IB_logo.svg" alt="IBusiness"></a>
                     </div>
                     <div class="navbar__right">
                         <ul class="navbar__items">
@@ -104,10 +109,10 @@
                                 <img src="img/IB_logo.png" alt="IBusiness">
                                 <button type="button" class="navbar__close-btn"></button>
                             </div>
-                            <li class="navbar__item"><a href="#" class="navbar__link">О приложении</a></li>
-                            <li class="navbar__item"><a href="#" class="navbar__link">Особенности</a></li>
-                            <li class="navbar__item"><a href="#" class="navbar__link">Способы оплаты</a></li>
-                            <li class="navbar__item"><a href="#" class="navbar__link">Сертификаты</a></li>
+                            <li class="navbar__item"><a href="#about-app" class="navbar__link navbar__link_animate">О приложении</a></li>
+                            <li class="navbar__item"><a href="#functions" class="navbar__link navbar__link_animate">Особенности</a></li>
+                            <li class="navbar__item"><a href="#pmetods" class="navbar__link navbar__link_animate">Способы оплаты</a></li>
+                            <li class="navbar__item"><a href="#for-whom" class="navbar__link navbar__link_animate">Для кого?</a></li>
                             <!-- <li class="navbar__item"><a href="#" class="navbar__link navbar__link_last">Войти</a></li> -->
                         </ul>
                         <a href="https://app.mypage.kz/login" target="_blank">
@@ -127,7 +132,7 @@
         <div class="container">
             <div class="promo__header">
                 <div class="promo__title">
-                    <h2>Автоматизируйте ваш магазин в одном приложении за 1 день. <span>Бесплатно. </span></h2>
+                    <h2>Автоматизируйте ваш магазин в одном приложении за 1 день. Бесплатно.</h2>
                 </div>
                 <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="promo__btn promo_link">
                     Скачать приложение
@@ -183,9 +188,9 @@
                     </div>
                     <div class="carousel__content">
                         <div class="carousel__slide-title">Оплата только за банковскую комиссию</div>
-                        <div class="carousel__slide-text">Установи наше приложение 
-                            и плати только за платеж</div>
-                        <a class="carousel__btn" href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank">Подробнее</a>
+                        <div class="carousel__slide-text">Установите наше приложение 
+                            и платите только за платеж</div>
+                        <a class="carousel__btn promo_link" href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank">Подробнее</a>
                     </div>
                 </div>
                 <!-- <div class="carousel__slide-wrapper">
@@ -230,12 +235,12 @@
     <!-- Actions -->
     <section class="actions">
         <div class="container">
-            <div class="actions__subheading">Функции</div>
+            <div class="actions__subheading" id="functions">Функции</div>
             <div class="actions__items">
                 <div class="actions__items-block-1 bot_offset">
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
-                            <div class="actions__descr-title">Создай интернет-магазин самостоятельно</div>
+                            <div class="actions__descr-title">Создайте интернет-магазин самостоятельно</div>
                             <div class="actions__descr-text">У вас есть возможность продавать собственные товары, загружая их одним файлом, запланировать скидки и акции, а также иметь лёгкий доступ к информации о заказе. </div>
                         </div>
                     </div>
@@ -261,7 +266,7 @@
                                 <li class="actions__li before-car right_offset">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Настройка заказа</div>
-                                        <div class="actions__li-text">Установи время и стоимость доставки </div>
+                                        <div class="actions__li-text">Установите время и стоимость доставки </div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-send">
@@ -278,8 +283,8 @@
                 <div class="actions__items-block-1 top_offset bot_offset">
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
-                            <div class="actions__descr-title">Управляй товароучетом</div>
-                            <div class="actions__descr-text">Благодаря товароучетом узнайте о каждом движении товаров онлайн и о наличии товара на складах.</div>
+                            <div class="actions__descr-title">Управляйте товароучетом</div>
+                            <div class="actions__descr-text">Благодаря товароучету узнайте о каждом движении товаров онлайн и о наличии товара на складах.</div>
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
@@ -302,7 +307,7 @@
                                 <li class="actions__li before-sort">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Учет товаров</div>
-                                        <div class="actions__li-text">Контролируй наличие товаров на складе</div>
+                                        <div class="actions__li-text">Контролируйте наличие товаров на складе</div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-scanner right_offset">
@@ -320,7 +325,7 @@
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
                             <div class="actions__descr-title">Онлайн касса с передачей в ОФД</div>
-                            <div class="actions__descr-text">Онлайн касса позволяет печатать чеки на любой принтер, поделиться чеком через WhatsApp и email. Отсутсвует скрытые платежи и полностью соответсвует закону РК.</div>
+                            <div class="actions__descr-text">Онлайн касса позволяет печатать чеки на любой принтер, поделиться чеком через WhatsApp и email. Отсутсвие скрытых платежей и полное соответсвие законам РК.</div>
                         </div>
                     </div>
                     <div class="actions__item actions__item-2">
@@ -360,7 +365,7 @@
                 <div class="actions__items-block-1 top_offset bot_offset">
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
-                            <div class="actions__descr-title">Анализируй продажи товара</div>
+                            <div class="actions__descr-title">Анализируйте продажи товара</div>
                             <div class="actions__descr-text">Аналитика поможет определить точную карту Вашего бизнеса и увидеть статистику продаваемости и сезонности товаров, популярные категории товаров и эффективность работы продавцов.</div>
                         </div>
                     </div>
@@ -380,13 +385,13 @@
                                 <li class="actions__li before-graphbar right_offset">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Полная аналитика</div>
-                                        <div class="actions__li-text">Контролируй свой бизнес удаленно</div>
+                                        <div class="actions__li-text">Контролируйте свой бизнес удаленно</div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-piechart">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Сбор данных</div>
-                                        <div class="actions__li-text">Отчеты по продожам и заказам</div>
+                                        <div class="actions__li-text">Отчеты по продажам и заказам</div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-discount right_offset">
@@ -421,13 +426,13 @@
                                 <li class="actions__li before-user">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Данные покупателей</div>
-                                        <div class="actions__li-text">Добавляй или редактируй информации</div>
+                                        <div class="actions__li-text">Добавляйте или редактируйте информации</div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-start right_offset">
                                     <div class="actions__li-descr">
                                         <div class="actions__li-title">Активность аккаунта</div>
-                                        <div class="actions__li-text">Проверяй активность транзакций аккаунта</div>
+                                        <div class="actions__li-text">Проверяйте активность транзакций аккаунта</div>
                                     </div>
                                 </li>
                                 <li class="actions__li before-shoppingbag">
@@ -441,7 +446,7 @@
                     </div>
                 </div>
 
-                <div class="actions__items-block-1 top_offset">
+                <!-- <div class="actions__items-block-1 top_offset">
                     <div class="actions__item actions__item-1">
                         <div class="actions__descr">
                             <div class="actions__descr-title">Мобильный кассир</div>
@@ -482,7 +487,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -490,7 +495,7 @@
     <!-- Payment methods-->
     <section class="pmethods">
         <div class="container">
-            <div class="pmethods__title">Все популярные методы оплаты</div>
+            <div class="pmethods__title" id="pmetods">Все популярные методы оплаты</div>
             <div class="pmethods__text">Беспрепятственно принимайте любой способ оплаты, 
                 который хотят ваши клиенты</div>
             <div class="pmethods__items">
@@ -502,7 +507,7 @@
                     </div>
                     <div class="pmethods__descr">
                         <div class="pmethods__subtitle">Pos-терминал в телефоне</div>
-                        <div class="pmethods__subtext">Pos-терминал теперь в твоем смартфоне. С помощью поддержки NFC принимай бесконтактные платежи у клиента.</div>
+                        <div class="pmethods__subtext">Pos-терминал теперь в твоем смартфоне. С помощью поддержки NFC принимайте бесконтактные платежи у клиента.</div>
                     </div>
                 </div>
                 <div class="pmethods__item">
@@ -536,12 +541,12 @@
         <div class="container">
             <div class="applications__items">
                 <div class="applications__item">
-                    <a href="#" class="appliacations__logo">
-                        <img src="img/IB_logo_min.png" alt="IBusiness">
+                    <a href="#" class="applications__logo">
+                        <img src="img/icon_gradient_logo.svg" alt="IBusiness">
                     </a>
                 </div>
                 <div class="applications__item">
-                    <div class="applications__title">Осуществляй онлайн и офлайн продажи 
+                    <div class="applications__title">Осуществляйте онлайн и офлайн продажи 
                         в одной системе</div>
                 </div>
                 <div class="applications__apps">
@@ -556,7 +561,7 @@
     <!--Advantages block-->
     <section class="advantages">
         <div class="container">
-            <div class="advantages__subheading">О приложении</div>
+            <div class="advantages__subheading" id="about-app">О приложении</div>
             <div class="advantages__items">
                 <div class="advantages__item">
                     <div class="advantages__content">
@@ -612,7 +617,7 @@
 
     <section class="accordion">
         <div class="container">
-            <div class="accordion__subheading">Для кого?</div>
+            <div class="accordion__subheading" id="for-whom">Для кого?</div>
             <div class="accordion__items">
                 <div class="accordion__item">
                     <input checked class="accordion__input" type="radio" name="accordion" id="accordion_1">
@@ -621,7 +626,7 @@
                         <div class="accordion__text">
                             iBusiness - это многофункциональное приложение, которое заменяет
                             онлайн кассу, pos-терминал, систему
-                            товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                            товароучета, клиентскую базу и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
                             
                         </div>
                         <div class="accordion__bg-1">
@@ -635,7 +640,7 @@
                     <label class="accordion__title" for="accordion_2">Для оффлайн-торговли</label>                   
                     <div class="accordion__content">
                         <div class="accordion__text">
-                            iBusiness - это многофункциональное приложение, которое заменяет онлайн кассу, pos-терминал, систему товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                            Осуществляя продажи на месте, одновременно отслеживайте количество на складе, сумму дохода и аналитику. Сканируя бар-код с помощью мобильного телефона, осуществляйте поиск на складе и продажи на месте. Печатайте онлайн-чек с мобильного приложения
                         </div>
                         <div class="accordion__bg-2">
                             <img src="img/offline_shopping.png" alt="#">
@@ -645,10 +650,10 @@
                 </div>
                 <div class="accordion__item">
                     <input class="accordion__input" type="radio" name="accordion" id="accordion_3">
-                    <label class="accordion__title" for="accordion_3">Для инста-шопперов</label>
+                    <label class="accordion__title" for="accordion_3">Для инста-магазинов</label>
                     <div class="accordion__content">
                         <div class="accordion__text">
-                            iBusiness - это многофункциональное приложение, которое заменяет онлайн кассу, pos-терминал, систему товароучета, CRM и Интернет магазин. Приложение поможет сократить потери и увеличит доходы.
+                            Создавайте категории товаров в Instagram, Facebook и прочих платформах социальных медиа, делитесь своим линком, перенаправляйте клиентов в свой онлайн-магазин.
                         </div>
                         <div class="accordion__bg-3">
                             <img src="img/insta_shopping.png" alt="Insta Shopping">
@@ -666,7 +671,7 @@
                 <div class="app-descr__title">Все в одном приложении</div>
                 <div class="app-descr__text">Приложение заменяет сразу несколько сервисов и платных услуг, поможет сократить убытки и повысить доходы.</div>
                 <div class="app-descr__box-link">
-                    <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="app-descr__link">Скачать приложение</a>
+                    <a href="https://apps.apple.com/az/app/ibusiness/id1627195412" target="_blank" class="app-descr__link promo_link">Скачать приложение</a>
                 </div>
             </div>
         </div>
@@ -678,7 +683,7 @@
             <div class="footer__items">
                 <div class="footer__item">
                     <div class="footer__logo">
-                        <a href="#"><img src="img/footer_logo.png" alt="IBusiness"></a>
+                        <a href="#"><img src="img/ibusiness_logo_white.svg" alt="IBusiness"></a>
                     </div>
                     <div class="footer__logo-text">Мы оцифруем ваш магазин бесплатно</div>
                 </div>
@@ -701,10 +706,10 @@
                                 <div class="footer__phone"><a href="tel:77711916817">+7 771 191 68 17</a></div>
                             </div>
                             <div class="footer__mailbox">
-                                <div class="footer__mail">info@ibusiness.asia</div>
+                                <a href="mailto:info@ibusiness.asia” "><div class="footer__mail">info@ibusiness.asia</div></a>
                             </div>
                             <div class="footer__instabox">
-                                <div class="footer__insta">@ibusiness.asia</div>
+                                <a href="https://www.instagram.com/ibusiness.asia/" target="_blank"><div class="footer__insta">@ibusiness.asia</div></a>
                             </div>
                             <div class="footer__adressbox">
                                 <div class="footer__adress">г. Алматы, мкрн. Керемет 1 к6</div>

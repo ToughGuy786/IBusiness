@@ -1,3 +1,5 @@
+/*const { any } = require("micromatch"); */
+
 $(document).ready(function () {
     $('.carousel__inner').slick({
         dots: false,
@@ -19,4 +21,15 @@ $(document).ready(function () {
         $('.promo_link').attr('href', 'https://app.mypage.kz/login');
     }
 
+    $(".navbar__link_animate").click(function (event) {
+        event.preventDefault();
+        var block = $(this).attr('href');
+        console.log(block);
+       var top = $(block).offset().top;
+        console.log(top);
+        $('body,html').animate({scrollTop: top}, 1000);
+       });
 });
+
+
+

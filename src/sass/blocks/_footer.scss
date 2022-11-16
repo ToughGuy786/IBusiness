@@ -2,7 +2,11 @@
     background-color: #060606;
     padding: 48px 0 40px 0;
     color: #ffffff;
-
+    &__logo {
+        img {
+            width: 152px;
+        }
+    }
     &__items {
         display: flex;
         flex-wrap: wrap;
@@ -133,6 +137,12 @@
         position: relative;
         display: flex;
         align-items: center;
+        a {
+            text-decoration: none;
+            color:#ffffff;
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
     &__phonebox::before {
         content: url('../icons/ic_phone.svg');
