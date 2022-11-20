@@ -9,65 +9,12 @@
     }
     &__items {
         display: flex;
-        flex-wrap: wrap;
-        margin: 0 -15px;
     }
-
+    &__contacts-links {
+        display: flex;
+    }
     &__item {
         padding: 0 15px;
-
-        &:nth-child(1) {
-            max-width: 30%;
-            flex: 0 0 30%;
-
-            @media (max-width: 768px) {
-                max-width: 100%;
-                flex: 0 0 100%;
-                margin-bottom: 30px;
-            }
-        }
-
-        &:nth-child(2) {
-            max-width: 25%;
-            flex: 0 0 25%;
-
-            @media (max-width: 768px) {
-                max-width: 100%;
-                flex: 0 0 100%;
-                margin-bottom: 30px;
-            }
-        }
-
-        &:nth-child(3) {
-            max-width: 25%;
-            flex: 0 0 25%;
-
-            @media (max-width: 768px) {
-                max-width: 100%;
-                flex: 0 0 100%;
-                margin-bottom: 30px;
-            }
-        }
-
-        &:nth-child(4) {
-            max-width: 20%;
-            flex: 0 0 20%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 15px;
-
-            @media (max-width: 768px) {
-                flex-direction: row;
-                justify-content: center;
-                max-width: 100%;
-                flex: 0 0 100%;
-            }
-        }
-
-        @media (min-width: 992px) {
-
-        }
     }
 
     &__logo-text {
@@ -80,19 +27,10 @@
     &__nav-title {
         font-weight: 500;
         font-size: 16px;
-
-        @media (max-width: 768px) {
-            font-size: 18px;
-            font-weight: 600;
-        }
     }
     &__nav-items {
         padding-top: 24px;
         line-height: 1.4;
-
-        @media (max-width: 768px) {
-            padding-top: 16px;
-        }
     }
     &__nav-item {
         margin-top: 15px;
@@ -117,11 +55,6 @@
     &__contacts-title {
         font-weight: 500;
         font-size: 16px;
-
-        @media (max-width: 768px) {
-            font-size: 18px;
-            font-weight: 600;
-        }
     }
     &__contacts-wrapper {
         padding-top: 29px;
@@ -189,15 +122,6 @@
         display: block;
         border: 2px solid #ffffff;
         border-radius: 5px;
-
-        @media (min-width: 768px) {
-            width: 100%;
-        }
-
-        @media (min-width: 992px) {
-            width: 140px;
-        }
-
         img {
             width: 100%;
         }
@@ -217,9 +141,5 @@
         line-height: 20px;
         color: #8C8C8C;
         text-align: center;
-
-        @media (min-width: 768px) {
-           text-align: left;
-        }
     }
 }

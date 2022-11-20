@@ -22,7 +22,11 @@
             justify-content: space-between;
         }
     }
-
+    &__img {
+        img {
+            max-width: 268px;
+        }
+    }
     &__item {
         max-width: 584px;
     }
@@ -99,19 +103,4 @@
         color: #8C8C8C;
     }
 
-    &__img {
-        margin-bottom: 1rem !important;
-
-        @media (max-width: 991px) {
-            order: -1;
-            text-align: center;
-        }
-
-        img {
-
-            @media (max-width: 991px) {
-                height: 250px;
-            }
-        }
-    }
 }

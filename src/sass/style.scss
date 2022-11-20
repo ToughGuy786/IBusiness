@@ -58,6 +58,7 @@ ul {
     }
     .pmethods {
         &__item-bg {
+            width: 300px;
             height: 330px;
         }
     }
@@ -109,22 +110,44 @@ ul {
             margin-left: 35px;
         }
     }
+    .advantages {
+        &__img {
+            img {
+                width: 254px;
+            }
+        }
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
-        max-width: 775px;
+        padding: 0;
+        max-width: 700px;
+    }
+    .navbar {
+        &__right {
+            margin-left: 0;
+        }
+    }
+    .carousel {
+        padding-bottom: 0;
+        .slick-list {
+            height: 410px;
+        }
+        &__slide-wrapper {
+            display: flex;
+        }
     }
     .actions {
         &__items-block-1 {
             display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(8, 1fr);
             grid-auto-rows: minmax(0, auto);
             grid-template-areas: 
             ". . a a a a ."
-            ". c c d d d ."
-            ". . . b . . .";
+            "c c c d d d d"
+            ". . . b b . .";
         }
         &__descr {
             text-align: center;
@@ -141,6 +164,12 @@ ul {
         &__item-2 {
             margin-top: 24px;
         }
+        &__li-descr {
+            padding: 20px;
+        }
+        .top_offset {
+            padding: 0;
+        }
     }
 
     .pmethods {
@@ -151,6 +180,7 @@ ul {
 
         }
         &__item-bg {
+            width: 221px;
             height: 221px;
         }
         .pmethods__img-size-1 {
@@ -195,7 +225,10 @@ ul {
             justify-content: space-between;
         }
         &__img {
-            margin: 40px 40px 0 40px
+            margin: 40px 40px 0 40px;
+            // img {
+            //     max-width: 268px;
+            // }  
         }
     }
 
@@ -246,7 +279,8 @@ ul {
 
 @media (max-width: 767px) {
     .container {
-        max-width: 696px;
+        padding: 0;
+        width: 696px;
     }
     .navbar {
         &__link_last {
@@ -263,6 +297,24 @@ ul {
                 display: none;
             }
         }
+        &__right {
+            margin-left: 0;
+        }
+    }
+    .carousel {
+        padding-bottom: 0;
+        .slick-list {
+            height: 410px;
+        }
+        &__slide-wrapper {
+            display: flex !important;
+        }
+    }
+    .actions {
+        &__ofd {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
     .actions__items-block-1 {
         grid-template-columns: repeat(3, 1fr);
@@ -273,7 +325,9 @@ ul {
 
     }
     .actions__item-1 {
-        margin-right: 0;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 478px;
     }
     .actions__item-4 {
         margin-left: 12px
@@ -321,6 +375,62 @@ ul {
             }
         }
     }
+    .pmethods {
+        &__item-bg {
+            width: 221px;
+            height: 221px;
+        }
+        &__img-size-1 {
+            max-width: 221px;
+        }
+        &__img-size-2 {
+            max-width: 125px;
+        }
+        &__img-size-3 {
+            max-width: 125px;
+        }
+        &__descr {
+            max-width: 221px;
+        }
+        &__subtext {
+            font-size: 14px;
+        }
+    }
+    .advantages {
+        &__items {
+            align-items: center;
+        }
+        &__content {
+            text-align: center;
+        }
+        &__img {
+            margin-top: 40px;
+            img {
+                width: 268px;
+            }
+        }
+        &__text {
+            padding: 0 42px;
+        }
+    }
+    .footer {
+        &__items {
+            display: block;
+        }
+        &__logo-text {
+            line-height: 1;
+        }
+        &__contacts-links {
+            margin-top: 40px;
+        }
+        &__app-links {
+            display: flex;
+            margin-top: 40px;
+        }
+        &__appstore {
+            margin-right: 16px;
+        }
+    }
 }
 
 
@@ -341,7 +451,6 @@ ul {
     outline: 0;
     border-radius: 4px;
     background: transparent;
-    margin-left: -20px;
     margin-right: 10px;
 
     @media (min-width: 992px) {
@@ -550,6 +659,10 @@ ul {
 
 @media (max-width: 575px) {
     .navbar {
+        padding: 12px 12px;
+        .container {
+            width: 343px;
+        }
         &__link_last {
             display: none;
         }
@@ -565,11 +678,64 @@ ul {
             display: none;
         }
     }
+    .promo {
+        .container {
+            width: 343px;
+        }
+    }
+    .carousel {
+        .container {
+            width: 343px;
+        }
+        &__slide-wrapper {
+            width: 100%;
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 223px;
+            }
+        }
+    }
+    .steps {
+        .container {
+            width: 343px;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     .actions {
+        .container {
+            margin: 0 auto;
+            padding: 0;
+            width: 343px;
+        }
+        &__item-2 {
+            margin-top: 25px;
+        }
         &__item-3 {
             display: flex;
             align-items: center;
             margin-bottom: 40px;
+        }
+        &__items-block-1 {
+            display: grid;
+            grid-template-columns: 1fr 343px 1fr;
+            grid-auto-rows: minmax(0, auto);
+            grid-template-areas: 
+            ". a ."
+            ". d ."
+            ". b ."
+            ". c .";
+        }
+        &__descr {
+            text-align: center;
+        }
+        &__img {
+            margin: 40px auto 0 auto;
         }
     }
     .app-descr {
@@ -578,11 +744,111 @@ ul {
     .carousel {
         padding-bottom: 0;
         &__slide-wrapper {
-            display: flex;
+            display: flex !important;
             flex-direction: column-reverse;
         }
     }
+    .pmethods {
+        .container {
+            max-width: 343px;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 40px;
+        }
+        &__item {
+            margin-top: 32px;
+            padding: 0;
+        }
+        &__img-size-1 {
+            max-width: 343px;
+        }
+        &__img-size-2 {
+            max-width: 221px;
+        }
+        &__img-size-3 {
+            max-width: 221px;
+        }
+        &__item-bg {
+            width: 343px;
+            height: 343px;
+        }
+        &__descr {
+            max-width: 343px;
+        }
+    }
+    .applications {
+        .container {
+            width: 343px;
+        }
+        &__appstore, &__googleplay {
+            img {
+                width: 164px;
+            }
+        }
+    }
+    .advantages {
+        .container {
+            width: 343px;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+        &__descr {
+            display: block;
+        }
+        &__first-block, &__second-block {
+            width: 100%;
+        }
+        &__img {
+            margin: 42px auto 0 auto;
+            img {
+                width: 166px;
+            }
+        }
+        &__text {
+            padding: 0;
+        }
+    }
+    .accordion {
+        .container {
+            margin: 0 auto;
+            width: 343px;
+        }
+        &__bg-1 {
+            max-width: 343px;
+            img {
+                width: 320px;
+            }
+        }
+        &__bg-2 {
+            max-width: 343px;
+            img {
+                width: 320px;
+            }
+        }
+        &__bg-3 {
+            max-width: 343px;
+            img {
+                width: 320px;
+            }
+        }
+    }
+    .app-descr {
+        .container {
+            width: 343px;
+            margin: 0 auto;
+        }
+    }
     .footer {
+        .container {
+            width: 343px;
+            margin: 0 auto;
+        }
         &__logo {
             img {
                 width: 170px;
@@ -590,6 +856,12 @@ ul {
         }
         &__logo-text {
             padding-top: 30px;
+        }
+        &__contacts-links {
+            display: block;
+        }
+        &__contacts {
+            margin-top: 32px;
         }
     }
 }

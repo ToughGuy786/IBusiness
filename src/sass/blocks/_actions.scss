@@ -2,7 +2,12 @@
     padding: 50px 0;
     background-color: #FBFBFB;
     overflow: hidden;
-
+    &__img {
+        width: 305px;
+        img {
+            width: 100%;
+        }
+    }
     @media (min-width: 768px) {
         padding: 88px 0;
     }
@@ -19,7 +24,8 @@
         img {
 
             @media (max-width: 767px) {
-                height: 250px;
+                
+                max-width: 166px;
             }
         }
     }
