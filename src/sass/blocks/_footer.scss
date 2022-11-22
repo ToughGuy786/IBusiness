@@ -85,11 +85,15 @@
         height: 24px;
     }
     &__mailbox::before {
-        content: url('../icons/ic_mail.svg');
+        // content: url('../icons/ic_mail.svg');
+        content: '@';
         display: block;
         position: absolute;
         width: 24px;
         height: 24px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
     }
     &__instabox::before {
         content: url('../icons/ic_instagram-fill.svg');
@@ -116,7 +120,9 @@
         }
     }
     //Footer apps
-
+    &__googleplay {
+        margin-top: 16px;
+    }
     &__app-link {
         width: 140px;
         display: block;
