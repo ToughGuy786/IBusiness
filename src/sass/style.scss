@@ -332,6 +332,233 @@ ul {
     .actions__item-4 {
         margin-left: 12px
     }
+    .before-picture::before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_picture.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-car::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_car.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-send::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #C8E0FB url("../icons/actions_icons/act_ico-1/ic_send.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    
+    // second block
+    .before-upload::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_upload.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-sort::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_sort.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-scanner::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D5DBFF url("../icons/actions_icons/act_ico-2/ic_scanner.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    
+    // third block
+    .before-setting::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_setting.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-favourite::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_favourite.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-tool::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FDF5DD url("../icons/actions_icons/act_ico-3/ic_tool.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    
+    // fourth block
+    .before-graphbar::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_graphbar.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-piechart::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_piechart.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-discount::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #D6EFEA url("../icons/actions_icons/act_ico-4/ic_discount.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    
+    // fifth block
+    .before-user::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_user.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-start::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_start.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    .before-shoppingbag::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        background: #FBC8E0 url("../icons/actions_icons/act_ico-5/ic_shoppingbag.svg") center no-repeat;
+        border-radius: 8px;
+    }
+    
+    // sixth block
+    .before-shoppingcard::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;;
+        left: 12px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_shoppingcard.svg") center no-repeat;
+    }
+    .before-scannercode::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_scannercode.svg") center no-repeat;
+    }
+    .before-wallet::before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 26%;
+        left: 12px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #EAD5FA url("../icons/actions_icons/act_ico-6/ic_wallet.svg") center no-repeat;
+    }
+    //
     .accordion {
         &__items {
             max-width: 696px;
