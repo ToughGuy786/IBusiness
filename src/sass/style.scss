@@ -56,6 +56,11 @@ ul {
     .container {
         max-width: 960px;
     }
+    .navbar {
+        &__inner {
+            width: 950px;
+        }
+    }
     .pmethods {
         &__item-bg {
             width: 300px;
@@ -128,6 +133,9 @@ ul {
     .navbar {
         &__right {
             margin-left: 0;
+        }
+        &__inner {
+            width: 740px;
         }
     }
     .carousel {
@@ -287,6 +295,7 @@ ul {
             padding: 0;
             margin: 0;
             background-color: #CBE6FF;
+            display: none;
             div {
                 display: block;
                 background-color: #ffffff;
@@ -300,6 +309,9 @@ ul {
         &__right {
             margin-left: 0;
         }
+        &__inner {
+            width: 696px;
+        }
     }
     .carousel {
         padding-bottom: 0;
@@ -308,6 +320,11 @@ ul {
         }
         &__slide-wrapper {
             display: flex !important;
+        }
+        .slick-slide {
+            img {
+                width: 100%;
+            }
         }
     }
     .actions {
@@ -892,6 +909,11 @@ ul {
         padding: 12px 12px;
         .container {
             width: 343px;
+        }
+        &__inner {
+            width: 375px;
+            padding: 16px;
+            border-radius: 5px
         }
         &__link_last {
             display: none;
