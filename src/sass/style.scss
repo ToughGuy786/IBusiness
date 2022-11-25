@@ -309,6 +309,10 @@ ul {
         &__right {
             margin-left: 0;
         }
+        &__inner-background {
+            width: 100%;
+            left: 0;
+        }
         &__inner {
             width: 696px;
         }
@@ -906,13 +910,17 @@ ul {
 
 @media (max-width: 575px) {
     .navbar {
-        padding: 12px 12px;
+        // padding: 12px 12px;
         .container {
             width: 343px;
         }
+        &__inner-background {
+            width: 100%;
+            left: 0;
+        }
         &__inner {
             width: 375px;
-            padding: 16px;
+            // padding: 16px;
             border-radius: 5px
         }
         &__link_last {
