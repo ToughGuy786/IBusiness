@@ -3,7 +3,6 @@
     max-width: 100%;
     width: 100%;
     background-color: #CBE6FF;
-    padding-top: 10px;
     a {
         text-decoration: none;
     }
@@ -11,6 +10,13 @@
         img {
             width: 152px;
         }
+    }
+    &__inner-background {
+        width: 100%;
+        background-color: #CBE6FF;
+        height: 92px;
+        position: fixed;
+        z-index: 100;
     }
     &__inner {
         display: flex;
@@ -20,9 +26,7 @@
         position: fixed;
         width: 1200px;
         z-index: 100;
-        background-color: #CBE6FF;
-        padding: 16px 15px;
-        border-radius: 15px;
+        padding: 26px 15px;
     }
 
     &__right {
