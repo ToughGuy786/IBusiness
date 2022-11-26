@@ -11,6 +11,8 @@
 @import 'blocks/accordion';
 @import 'blocks/app-descr';
 @import 'blocks/footer';
+@import 'blocks/header';
+
 
 *,
 *::before,
@@ -135,7 +137,12 @@ ul {
             margin-left: 0;
         }
         &__inner {
-            width: 740px;
+            width: 100%;
+        }
+    }
+    .promo {
+        &__title {
+            padding-top: 48px;
         }
     }
     .carousel {
@@ -314,7 +321,15 @@ ul {
             left: 0;
         }
         &__inner {
-            width: 696px;
+            padding: 15px;
+            width: 100%;
+        }
+    }
+    .promo {
+        padding-top: 6rem;
+        &__header {
+            max-width: 490px;
+            margin: 0 auto;
         }
     }
     .carousel {
@@ -919,9 +934,9 @@ ul {
             left: 0;
         }
         &__inner {
-            width: 375px;
+            padding: 15px;
+            width: 100%;
             // padding: 16px;
-            border-radius: 5px
         }
         &__link_last {
             display: none;
@@ -939,6 +954,7 @@ ul {
         }
     }
     .promo {
+        padding-top: 8rem;
         .container {
             width: 343px;
         }

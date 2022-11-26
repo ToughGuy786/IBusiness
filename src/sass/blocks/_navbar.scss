@@ -15,8 +15,6 @@
         width: 100%;
         background-color: #CBE6FF;
         height: 92px;
-        position: fixed;
-        z-index: 100;
     }
     &__inner {
         display: flex;
@@ -27,6 +25,7 @@
         width: 1200px;
         z-index: 100;
         padding: 25px 15px;
+        background-color: #cbe6ff;
     }
 
     &__right {
