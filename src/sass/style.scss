@@ -141,6 +141,7 @@ ul {
         }
     }
     .promo {
+        padding-top: 10rem;
         &__title {
             padding-top: 48px;
         }
@@ -934,7 +935,7 @@ ul {
             left: 0;
         }
         &__inner {
-            padding: 15px;
+            padding: 5px;
             width: 100%;
             // padding: 16px;
         }
@@ -957,6 +958,9 @@ ul {
         padding-top: 8rem;
         .container {
             width: 343px;
+        }
+        &__title {
+            padding: 0;
         }
     }
     .carousel {
