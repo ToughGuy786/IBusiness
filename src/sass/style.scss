@@ -63,6 +63,9 @@ ul {
             width: 950px;
         }
     }
+    .promo {
+        padding-top: 6rem;
+    }
     .pmethods {
         &__item-bg {
             width: 300px;
@@ -141,7 +144,6 @@ ul {
         }
     }
     .promo {
-        padding-top: 10rem;
         &__title {
             padding-top: 48px;
         }
@@ -935,7 +937,7 @@ ul {
             left: 0;
         }
         &__inner {
-            padding: 5px;
+            padding: 8px 5px 5px 5px;
             width: 100%;
             // padding: 16px;
         }
