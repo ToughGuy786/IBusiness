@@ -61,6 +61,7 @@ ul {
     .navbar {
         &__inner {
             width: 950px;
+            padding: 20px 15px;
         }
     }
     .promo {
@@ -135,14 +136,20 @@ ul {
         padding: 0;
         max-width: 700px;
     }
+
+    header {
+        width: 100%;
+    }
     .navbar {
         &__right {
             margin-left: 0;
         }
         &__inner {
+            padding: 15px 15px 15px 0;
             width: 100%;
         }
     }
+    
     .promo {
         &__title {
             padding-top: 48px;
@@ -300,6 +307,9 @@ ul {
         padding: 0;
         width: 696px;
     }
+    header {
+        width: 100%;
+    }
     .navbar {
         &__link_last {
             padding: 0;
@@ -324,7 +334,7 @@ ul {
             left: 0;
         }
         &__inner {
-            padding: 15px;
+            padding: 15px 15px 15px 0;
             width: 100%;
         }
     }
@@ -927,17 +937,20 @@ ul {
 }
 
 @media (max-width: 575px) {
+    header {
+        width: 100%;
+    }
     .navbar {
         // padding: 12px 12px;
         .container {
-            width: 343px;
+            width: 360px;
         }
         &__inner-background {
             width: 100%;
             left: 0;
         }
         &__inner {
-            padding: 8px 5px 5px 5px;
+            padding: 10px 7px 7px 0;
             width: 100%;
             // padding: 16px;
         }
@@ -956,6 +969,7 @@ ul {
             display: none;
         }
     }
+    
     .promo {
         padding-top: 8rem;
         .container {
