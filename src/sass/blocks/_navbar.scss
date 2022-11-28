@@ -1,9 +1,13 @@
-
+header {
+    background-color: #CBE6FF;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
 .navbar {
     max-width: 100%;
     width: 100%;
     background-color: #CBE6FF;
-    padding-top: 10px;
     a {
         text-decoration: none;
     }
@@ -12,17 +16,17 @@
             width: 152px;
         }
     }
+    &__inner-background {
+        width: 100%;
+        background-color: #CBE6FF;
+        height: 92px;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
-        left: 50%;
-        transform: translateX(-50%);
-        position: fixed;
         width: 1200px;
-        z-index: 100;
+        padding: 25px 15px;
         background-color: #CBE6FF;
-        padding: 16px 15px;
-        border-radius: 15px;
     }
 
     &__right {
